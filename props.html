@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/react.production.min.js"></script>
+    <script src="./js/react-dom.production.min.js"></script>
+    <script src="./js/browser.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        //子组件
+        // let MyComponent = (props) => {
+        //     return(
+        //         <div>
+        //             <h1>{props.title}</h1>
+        //             <p>{props.desc}</p>
+        //         </div>
+        //     )   
+        // }
+
+        class MyComponent extends React.Component{
+            render(){
+                return(
+                    <div>
+                        <h1>{this.props.title}</h1>
+                        <p>{this.props.desc}</p>
+                        <h1>{this.props.children}</h1>
+                    </div>
+                )
+            }   
+        }
+        //父组件
+        ReactDOM.render(<MyComponent title="嘻嘻" desc="赫赫">Felix</MyComponent>,document.getElementById('root'));
+    </script>
+</body>
+
+</html>
