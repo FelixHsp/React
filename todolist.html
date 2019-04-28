@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/react.production.min.js"></script>
+    <script src="./js/react-dom.production.min.js"></script>
+    <script src="./js/browser.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        class Add extends React.Component{
+            constructor(params){
+                super(params)
+                this.add=this.add.bind(this)
+            }
+            add(){
+                this.props.add(this.myInput.value);
+            }
+            render(){
+                return(
+                    <div>
+                        <input type="text" ref={input => {this.myInput = input}}/>
+                        <button onClick={this.add}>add</button>
+                    </div>
+                )
+            }
+        }
+        class List extends React.Component{
+            render(){
+                return(
+                    <div>
+                        <ul>
+                            {
+                                this.props.todos.map(function (val,index) {
+                                    return <li key={index}>{val}</li>
+                                })
+                            }
+                        </ul>
+                    </div>
+                )
+            }
+        }
+        class Main extends React.Component{
+            constructor(params){
+                super(params)
+                this.add=this.add.bind(this)
+                this.state={
+                    todos:[]
+                }
+            }
+            add(val){
+                console.log(val)
+                let arr = this.state.todos;
+                arr.push(val)
+                this.setState({
+                    todos:arr
+                })
+            }
+            render(){
+                return(
+                    <div>
+                        <h1>简单的todolist</h1>
+                        <Add add={this.add}></Add>
+                        <List todos={this.state.todos}></List>
+                    </div>
+                )
+            }
+        }
+        ReactDOM.render(<Main></Main>,document.getElementById('root'))
+    </script>
+</body>
+</html>
