@@ -1,10 +1,10 @@
 import React,{ Component } from 'react'
 
-export default class A extends Component {
+export default class About extends Component {
     render() { 
         return ( 
             <div>
-                A页面
+                about页面
             </div>
          )
     }
