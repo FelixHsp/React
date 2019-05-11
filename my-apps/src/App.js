@@ -11,18 +11,18 @@ class App extends Component {
     super(props);
     this.state = {
         Link1:'activ',
-        Link2:'',
-        Link3:'',
-        Link4:''
+        Link2:'other',
+        Link3:'other',
+        Link4:'other'
     }
     this.click = this.click.bind(this)
 }
   click(name){
     this.setState({
-      Link1:'',
-      Link2:'',
-      Link3:'',
-      Link4:'',
+      Link1:'other',
+      Link2:'other',
+      Link3:'other',
+      Link4:'other',
       ['Link'+name]:"activ"
     })
   }
@@ -34,7 +34,7 @@ class App extends Component {
             <div className="Logo">Felix</div>
             <div className="Header-wrapper">
               <div onClick={()=>{this.click(1)}} className={this.state.Link1}><Link to="/">Home</Link></div>
-              <div onClick={()=>{this.click(2)}} className={this.state.Link2}><Link to="/work">Work</Link></div>
+              <div onClick={()=>{this.click(2)}} className={this.state.Link2}><Link to="/work">Technology</Link></div>
               <div onClick={()=>{this.click(3)}} className={this.state.Link3}><Link to="/experience">Experience</Link></div>
               <div onClick={()=>{this.click(4)}} className={this.state.Link4}><Link to='/about'>About</Link></div>
               <Time></Time>

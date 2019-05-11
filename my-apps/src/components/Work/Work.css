@@ -1,0 +1,124 @@
+.wrapper .front-end,.back-end,.mini,.server,.ai{
+    /* background-color: black */
+    float: left;
+}
+.front-end{
+    width: 400px;
+    height: 500px;
+    background-color: #006699;
+    color: white;
+    margin-top: 80px;
+    margin-left: 100px;
+    border-radius:20px; 
+}
+.front-end .Title{
+    text-align: center;
+    background: white;
+    color: black;
+    font-size: 18px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 20px 20px 0 0;
+}
+.front-end li{
+    margin-left: 20px;
+    margin-top:10px;
+    font-size: 14px;
+    font-weight: 200 
+}
+.back-end{
+    width: 600px;
+    height: 200px;
+    background-color: #339933;
+    color: white;
+    margin-top: 80px;
+    margin-left: 10px;
+    border-radius:20px; 
+}
+.back-end .Title{
+    text-align: center;
+    background: white;
+    color: black;
+    font-size: 18px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 20px 20px 0 0;
+}
+.back-end li{
+    margin-left: 20px;
+    margin-top:10px;
+    font-size: 14px;
+    font-weight: 200 
+}
+.mini{
+    width: 600px;
+    height: 290px;
+    background-color: #FF6666;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius:20px; 
+}
+.mini .Title{
+    text-align: center;
+    background: white;
+    color: black;
+    font-size: 18px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 20px 20px 0 0;
+}
+.mini li{
+    margin-left: 20px;
+    margin-top:10px;
+    font-size: 14px;
+    font-weight: 200
+}
+.server{
+    width: 300px;
+    height: 150px;
+    background-color: #99CCCC;
+    color: white;
+    margin-top: -200px;
+    margin-left: 10px;
+    border-radius:20px; 
+}
+.server .Title{
+    text-align: center;
+    background: white;
+    color: black;
+    font-size: 18px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 20px 20px 0 0;
+}
+.server li{
+    margin-left: 20px;
+    margin-top:10px;
+    font-size: 14px;
+    font-weight: 200
+}
+.ai{
+    width: 300px;
+    height: 340px;
+    background-color: #FFCCCC;
+    color: white;
+    margin-top: -40px;
+    margin-left: 10px;
+    border-radius:20px; 
+}
+.ai .Title{
+    text-align: center;
+    background: white;
+    color: black;
+    font-size: 18px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 20px 20px 0 0;
+}
+.ai li{
+    margin-left: 20px;
+    margin-top:10px;
+    font-size: 14px;
+    font-weight: 200
+}
