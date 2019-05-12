@@ -1,5 +1,77 @@
-.Tes{
-    width: 100px;
-    height: 100px;
-    background-color: aqua
+.modal1{
+    width:1000px; 
+    height:600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-53%);
+    /* display: none; */
+    animation: openit 1s linear;
+}
+@keyframes openit{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.modaldel{
+    display: none;
+}
+
+.modal1 .title{
+    background-color: #99CC99;
+    color: white;
+    height: 35px;
+    border-radius: 15px 15px 0 0;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 35px;
+}
+.modal1 .content{
+    width:998px; 
+    height:600px;
+    overflow-y:auto;
+    /* overflow-x:auto;  */
+    background-color: white;
+    color: #999;
+    border: 1px solid black;
+    border-top: 0;
+    border-bottom: 0;
+}
+.modal1 .content::-webkit-scrollbar
+{
+    width: 5px;
+    /* height: 10px; */
+    background-color: white;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.modal1 .content::-webkit-scrollbar-track
+{
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+    border-radius: 10px;
+    background-color: white;
+}
+/*定义滑块 内阴影+圆角*/
+.modal1 .content::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    /* width: 1px; */
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+    background-color: #ccc;
+}
+.modal1 .bot{
+    width: 998px;
+    height: 15px;
+    margin-top: -2px;
+    background-color: white;
+    border-radius:0 0 15px 15px;
+    border: 1px solid black;
+}
+.modal1 .del{
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    background-color: #FF6666;
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    cursor: pointer;
 }

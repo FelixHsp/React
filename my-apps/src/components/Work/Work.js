@@ -30,7 +30,7 @@ class FontEnd extends Component {
             <div className="front-end ">
                 <div className="Title">
                     前端技能
-                    </div>
+                </div>
                 <ul>
                     <li>精通DIV+CSS页面布局，重构,掌握JavaScript，熟悉w3c标准，了解HTML语义化有一定的了解。</li>
                     <li>熟练掌握HTML5技术开发，熟悉响应式布局和弹性盒布局，百分比自适应布局，熟练掌握CSS3动画技术，且能熟练应用Animate.css动画库。</li>
