@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import { BrowserRouter as Router,Route,Link } from 'react-router-dom'
+import { BrowserRouter as Router,Route,NavLink } from 'react-router-dom'
 import About from './components/About/About'
 import Experience from './components/Experience/Experience'
 import Work from './components/Work/Work'
@@ -64,7 +64,8 @@ class App extends Component {
         bg7:'',
         bg8:'',
         bg9:'',
-        bg10:''
+        bg10:'',
+        begin:'begin2'
       })
     }, 1900);
   }
@@ -98,7 +99,7 @@ class App extends Component {
         bg8:'',
         bg9:'',
         bg10:'',
-        begin:'begin1'
+        begin:'begin2'
       })
     }, 1900);
   }
@@ -109,10 +110,10 @@ class App extends Component {
           <div className="Header">
             <div className="Logo">Felix</div>
             <div className="Header-wrapper">
-              <div onClick={()=>{this.click(1)}} className={this.state.Link1}><Link to="/">Home</Link></div>
-              <div onClick={()=>{this.click(2)}} className={this.state.Link2}><Link to="/work">Technology</Link></div>
-              <div onClick={()=>{this.click(3)}} className={this.state.Link3}><Link to="/experience">Experience</Link></div>
-              <div onClick={()=>{this.click(4)}} className={this.state.Link4}><Link to='/about'>About</Link></div>
+              <div onClick={()=>{this.click(1)}} className={this.state.Link1}><NavLink to="/">Home</NavLink></div>
+              <div onClick={()=>{this.click(2)}} className={this.state.Link2}><NavLink to="/work">Technology</NavLink></div>
+              <div onClick={()=>{this.click(3)}} className={this.state.Link3}><NavLink to="/experience">Experience</NavLink></div>
+              <div onClick={()=>{this.click(4)}} className={this.state.Link4}><NavLink to='/about'>About</NavLink></div>
               <Time></Time>
             </div>
           </div>

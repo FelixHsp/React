@@ -168,6 +168,9 @@ a {
     /* background: #FF9900; */
     z-index: 1;
 }
+.begin2{
+    display: none;
+}
 .bg1{
     height: 10%;
     /* background: red; */
