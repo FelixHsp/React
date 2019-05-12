@@ -46,14 +46,15 @@
     position: absolute;
     top: 0px;
     bottom: 0px;
-    animation:myfirst 0.8s linear;
-    -moz-animation:myfirst 0.8s linear; /* Firefox */
-    -webkit-animation:myfirst 0.8s linear; /* Safari and Chrome */
-    -o-animation:myfirst 0.8s linear; /* Opera */
+    /* animation:myfirst 0.8s linear;
+    -moz-animation:myfirst 0.8s linear; 
+    -webkit-animation:myfirst 0.8s linear; 
+    -o-animation:myfirst 0.8s linear;  */
     background: #ff9900;
+    /* resize: none; */
 }
 a {
-    color:#000;
+    /* color:#000; */
     text-decoration:none;
     outline: none;
     margin-right: 15px;
@@ -66,11 +67,13 @@ a {
 .App .Header{
     background: white;
     width: 100%;
+    /* color: white; */
 }
 .App .Header-wrapper{
     margin-left: 100px;
     height: 35px;
     line-height: 35px;
+    /* color: white; */
     /* float: left; */
     /* background: white; */
 }
@@ -85,24 +88,55 @@ a {
     height: 99%;
     border-radius: 20px;
     background: #ff9900;
+    
     /* margin: 0 auto; */
     /* margin-right: 20px; */
 }
-
+.activ a{
+    color: white;
+}
+@-webkit-keyframes pulse {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+    
+@keyframes pulse {
+    25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+        
+    75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
 .other {
     display: inline-block;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    }
+}
 .other:hover, .other:focus, .other:active {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-    }
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.other a{
+    color: #FF9900;
+}
 .App .Header .Time{
     /* background: red; */
     /* font-size: 22px; */
@@ -120,3 +154,67 @@ a {
     margin-left: 30px;
     font-weight: 300
 }
+.begin{
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    background: #FF9900;
+    z-index: 1;
+}
+.begin1{
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    /* background: #FF9900; */
+    z-index: 1;
+}
+.bg1{
+    height: 10%;
+    /* background: red; */
+    animation:change 1.6s linear;
+}
+.bg2{
+    height: 10%;
+    animation:change 1.8s linear;
+}
+.bg3{
+    height: 10%;
+    animation:change 1.9s linear;
+}
+.bg4{
+    height: 10%;
+    animation:change 1.7s linear;
+}
+.bg5{
+    height: 10%;
+    animation:change 1.5s linear;
+}
+.bg6{
+    height: 10%;
+    animation:change 1.6s linear;
+}
+.bg7{
+    height: 10%;
+    animation:change 1.7s linear;
+}
+.bg8{
+    height: 10%;
+    animation:change 1.9s linear;
+}
+.bg9{
+    height: 10%;
+    animation:change 1.8s linear;
+}
+.bg10{
+    height: 10%;
+    animation:change 1.6s linear;
+}
+@keyframes change
+{
+0%   {background: #99CC99; width:  0%;margin-left:0}
+25%  {background: #99CC33;width: 50%;margin-left:0}
+50%  {background: #99CC99;width: 100%;margin-left:0}
+75%  {background: #CCFF99;margin-left: 50%;width: 50%;}
+100% {background: #99CC99;margin-left: 100%;width: 0;}
+}
+

@@ -4,6 +4,7 @@ import About from './components/About/About'
 import Experience from './components/Experience/Experience'
 import Work from './components/Work/Work'
 import Home from './components/Home/Home'
+
 import './App.css'
 // import axios from 'axios';
 class App extends Component {
@@ -13,7 +14,18 @@ class App extends Component {
         Link1:'activ',
         Link2:'other',
         Link3:'other',
-        Link4:'other'
+        Link4:'other',
+        bg1:'',
+        bg2:'',
+        bg3:'',
+        bg4:'',
+        bg5:'',
+        bg6:'',
+        bg7:'',
+        bg8:'',
+        bg9:'',
+        bg10:'',
+        begin:'begin'
     }
     this.click = this.click.bind(this)
 }
@@ -23,8 +35,72 @@ class App extends Component {
       Link2:'other',
       Link3:'other',
       Link4:'other',
-      ['Link'+name]:"activ"
+      ['Link'+name]:"activ",
+      bg1:'bg1',
+      bg2:'bg2',
+      bg3:'bg3',
+      bg4:'bg4',
+      bg5:'bg5',
+      bg6:'bg6',
+      bg7:'bg7',
+      bg8:'bg8',
+      bg9:'bg9',
+      bg10:'bg10',
+      begin:'begin'
     })
+    setTimeout(() => {
+      this.setState({
+        begin:'begin1'
+      })
+    }, 900);
+    setTimeout(() => {
+      this.setState({
+        bg1:'',
+        bg2:'',
+        bg3:'',
+        bg4:'',
+        bg5:'',
+        bg6:'',
+        bg7:'',
+        bg8:'',
+        bg9:'',
+        bg10:''
+      })
+    }, 1900);
+  }
+  componentDidMount(){
+    this.setState({
+      bg1:'bg1',
+      bg2:'bg2',
+      bg3:'bg3',
+      bg4:'bg4',
+      bg5:'bg5',
+      bg6:'bg6',
+      bg7:'bg7',
+      bg8:'bg8',
+      bg9:'bg9',
+      bg10:'bg10'
+    })
+    setTimeout(() => {
+      this.setState({
+        begin:'begin1'
+      })
+    }, 900);
+    setTimeout(() => {
+      this.setState({
+        bg1:'',
+        bg2:'',
+        bg3:'',
+        bg4:'',
+        bg5:'',
+        bg6:'',
+        bg7:'',
+        bg8:'',
+        bg9:'',
+        bg10:'',
+        begin:'begin1'
+      })
+    }, 1900);
   }
   render() {
     return (
@@ -41,6 +117,18 @@ class App extends Component {
             </div>
           </div>
           <div className="clear"></div>
+          <div className={this.state.begin}>
+            <div className={this.state.bg1}></div>
+            <div className={this.state.bg2}></div>
+            <div className={this.state.bg3}></div>
+            <div className={this.state.bg4}></div>
+            <div className={this.state.bg5}></div>
+            <div className={this.state.bg6}></div>
+            <div className={this.state.bg7}></div>
+            <div className={this.state.bg8}></div>
+            <div className={this.state.bg9}></div>
+            <div className={this.state.bg10}></div>
+          </div>
           <Route path="/work" component={Work}></Route>
           <Route path="/experience" component={Experience}></Route>
           <Route path="/about" component={About}></Route>
@@ -50,6 +138,8 @@ class App extends Component {
     );
   }
 }
+
+
 class Time extends Component{
   constructor() {
     super();
@@ -65,9 +155,12 @@ class Time extends Component{
           date : new Date()
       })
   }
+  test(){
+    console.log(111)
+  }
   render(){
     return(
-      <div className='Time'>
+      <div className='Time' onClick={this.test}>
         {this.state.date.toLocaleTimeString()}
       </div>
     )

@@ -4,21 +4,25 @@
 }
 .front-end{
     width: 400px;
-    height: 500px;
-    background-color: #006699;
+    height: 550px;
+    background-color: #99CC33;
     color: white;
-    margin-top: 80px;
-    margin-left: 100px;
+    margin-top: 70px;
+    margin-left: 90px;
     border-radius:20px; 
+    border: 1px solid black
 }
+
 .front-end .Title{
     text-align: center;
     background: white;
     color: black;
-    font-size: 18px;
+    font-size: 16px;
     height: 35px;
     line-height: 35px;
+    border-bottom: 1px solid black;
     border-radius: 20px 20px 0 0;
+    
 }
 .front-end li{
     margin-left: 20px;
@@ -28,21 +32,23 @@
 }
 .back-end{
     width: 600px;
-    height: 200px;
-    background-color: #339933;
+    height: 220px;
+    background-color: #99CC99;
     color: white;
-    margin-top: 80px;
+    margin-top: 70px;
     margin-left: 10px;
     border-radius:20px; 
+    border: 1px solid black
 }
 .back-end .Title{
     text-align: center;
     background: white;
     color: black;
-    font-size: 18px;
+    font-size: 16px;
     height: 35px;
     line-height: 35px;
     border-radius: 20px 20px 0 0;
+    border-bottom: 1px solid black;
 }
 .back-end li{
     margin-left: 20px;
@@ -52,21 +58,23 @@
 }
 .mini{
     width: 600px;
-    height: 290px;
+    height: 320px;
     background-color: #FF6666;
     color: white;
     margin-top: 10px;
     margin-left: 10px;
     border-radius:20px; 
+    border: 1px solid black
 }
 .mini .Title{
     text-align: center;
     background: white;
     color: black;
-    font-size: 18px;
+    font-size: 16px;
     height: 35px;
     line-height: 35px;
     border-radius: 20px 20px 0 0;
+    border-bottom: 1px solid black;
 }
 .mini li{
     margin-left: 20px;
@@ -76,45 +84,49 @@
 }
 .server{
     width: 300px;
-    height: 150px;
+    height: 180px;
     background-color: #99CCCC;
     color: white;
-    margin-top: -200px;
+    margin-top: -220px;
     margin-left: 10px;
     border-radius:20px; 
+    border: 1px solid black;
 }
 .server .Title{
     text-align: center;
     background: white;
     color: black;
-    font-size: 18px;
+    font-size: 16px;
     height: 35px;
     line-height: 35px;
     border-radius: 20px 20px 0 0;
+    border-bottom: 1px solid black;
 }
 .server li{
     margin-left: 20px;
     margin-top:10px;
     font-size: 14px;
-    font-weight: 200
+    font-weight: 200;
 }
 .ai{
     width: 300px;
-    height: 340px;
+    height: 360px;
     background-color: #FFCCCC;
     color: white;
-    margin-top: -40px;
+    margin-top: -30px;
     margin-left: 10px;
     border-radius:20px; 
+    border: 1px solid black;
 }
 .ai .Title{
     text-align: center;
     background: white;
     color: black;
-    font-size: 18px;
+    font-size: 16px;
     height: 35px;
     line-height: 35px;
     border-radius: 20px 20px 0 0;
+    border-bottom: 1px solid black;
 }
 .ai li{
     margin-left: 20px;
@@ -122,3 +134,123 @@
     font-size: 14px;
     font-weight: 200
 }
+.block{
+    position:absolute;
+    color: white;
+    background: #99CC99;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    /* other decorate style */
+    opacity: 0;
+    -webkit-animation: barrage 10s  2s linear infinite;
+    -moz-animation: barrage 10s 2s linear infinite;
+    -ms-animation: barrage 10s 2s linear infinite;
+    animation: barrage 10s 2s linear infinite;
+    border: 1px solid black;
+  }
+  .block1{
+    position:absolute;
+    color: white;
+    background: #FF9900;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    /* other decorate style */
+    opacity: 0;
+    -webkit-animation: barrage 10s  0.5s linear infinite;
+    -moz-animation: barrage 10s 0.5s linear infinite;
+    -ms-animation: barrage 10s 0.5s linear infinite;
+    animation: barrage 10s 0.5s linear infinite;
+    border: 1px solid black;
+  }
+  .block2{
+    position:absolute;
+    color: white;
+    background: #FF6666;
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 120px;
+    /* other decorate style */
+    opacity: 0;
+    -webkit-animation: barrage 10s  3s linear infinite;
+    -moz-animation: barrage 10s 3s linear infinite;
+    -ms-animation: barrage 10s 3s linear infinite;
+    animation: barrage 10s 3s linear infinite;
+    border: 1px solid black;
+  }
+  .block3{
+    position:absolute;
+    color: white;
+    background: #99CCCC;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 80px;
+    /* other decorate style */
+    opacity: 0;
+    -webkit-animation: barrage 10s  5s linear infinite;
+    -moz-animation: barrage 10s 5s linear infinite;
+    -ms-animation: barrage 10s 5s linear infinite;
+    animation: barrage 10s 5s linear infinite;
+    border: 1px solid white;
+  }
+  .block4{
+    position:absolute;
+    color: white;
+    background: #99CC33;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 30px;
+    /* other decorate style */
+    opacity: 0;
+    -webkit-animation: barrage 10s  7s linear infinite;
+    -moz-animation: barrage 10s 7s linear infinite;
+    -ms-animation: barrage 10s 7s linear infinite;
+    animation: barrage 10s 7s linear infinite;
+    border: 1px solid white;
+  }
+  .block5{
+    position:absolute;
+    color: white;
+    background: wheat;
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 120px;
+    /* other decorate style */
+    opacity: 0;
+    -webkit-animation: barrage 10s  6.5s linear infinite;
+    -moz-animation: barrage 10s 6.5s linear infinite;
+    -ms-animation: barrage 10s 6.5s linear infinite;
+    animation: barrage 10s 6.5s linear infinite;
+    border: 1px solid white;
+  }
+ @keyframes barrage{
+    0%{
+      left:80%;
+      opacity: 1;
+      transform:translateX(0);
+    }
+    100%{
+      left:0;
+      opacity: 1;
+      transform:translateX(-100%);
+    }
+ }

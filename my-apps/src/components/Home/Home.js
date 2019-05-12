@@ -27,7 +27,7 @@ class WordWrapper  extends Component {
 class Img extends Component {
     render() { 
         return ( 
-            <div className='img'>
+            <div className='img' onClick={this.Tess}>
                 <img src={My} alt=""/>
             </div>
          );

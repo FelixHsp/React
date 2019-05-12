@@ -5,32 +5,32 @@
     margin-left: 50px;
 }
 .Word-Wrapper .text{
-    animation:change 1.5s ease infinite normal;
-    -moz-animation:change 1.5s ease infinite normal; /* Firefox */
-    -webkit-animation:change 1.5s ease infinite normal; /* Safari and Chrome */
-    -o-animation:change 1.5s ease infinite normal; /* Opera */
+    animation:change1 1.5s ease infinite normal;
+    -moz-animation:change1 1.5s ease infinite normal; /* Firefox */
+    -webkit-animation:change1 1.5s ease infinite normal; /* Safari and Chrome */
+    -o-animation:change1 1.5s ease infinite normal; /* Opera */
 }
-@keyframes change
+@keyframes change1
 {
     0%   {opacity: 0;}
     100% {opacity: 1;}
     0%   {opacity: 0;}
 }
-@-moz-keyframes change
-{
-    0%   {opacity: 0;}
-    100% {opacity: 1;}
-    0%   {opacity: 0;}
-}
-
-@-webkit-keyframes change
+@-moz-keyframes change1
 {
     0%   {opacity: 0;}
     100% {opacity: 1;}
     0%   {opacity: 0;}
 }
 
-@-o-keyframes change
+@-webkit-keyframes change1
+{
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+    0%   {opacity: 0;}
+}
+
+@-o-keyframes change1
 {
     0%   {opacity: 0;}
     100% {opacity: 1;}
