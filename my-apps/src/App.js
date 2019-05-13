@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import { BrowserRouter as Router,Route,NavLink } from 'react-router-dom'
+import { BrowserRouter as Router,Route,NavLink,Redirect } from 'react-router-dom'
 import About from './components/About/About'
 import Experience from './components/Experience/Experience'
 import Work from './components/Work/Work'
@@ -134,6 +134,9 @@ class App extends Component {
           <Route path="/experience" component={Experience}></Route>
           <Route path="/about" component={About}></Route>
           <Route exact path="/" component={Home}></Route>
+          <Route exact path="/build" render={()=>{
+            return <Redirect to="/"></Redirect>
+          }}></Route>
         </Router>
       </div>
     );

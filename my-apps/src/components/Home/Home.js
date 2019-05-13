@@ -1,6 +1,6 @@
 import React,{ Component } from 'react'
 import './Home.css'
-import My from './My.JPG'
+// import My from 'https://s2.ax1x.com/2019/05/13/E5J3QA.jpg'
 export default class Home extends Component {
     render() { 
         return ( 
@@ -28,7 +28,7 @@ class Img extends Component {
     render() { 
         return ( 
             <div className='img'>
-                <img src={My} alt=""/>
+                <img src='https://s2.ax1x.com/2019/05/13/E5J3QA.jpg' alt=""/>
             </div>
          );
     }

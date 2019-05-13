@@ -12,12 +12,12 @@ body{
 not supported by any browser */
 }
 .front-end{
-    width: 400px;
+    width: 25%;
     height: 550px;
     background-color: #99CC33;
     color: white;
-    margin-top: 70px;
-    margin-left: 90px;
+    margin-top: 4.5%;
+    margin-left: 7%;
     border-radius:20px; 
     border: 1px solid black;
     display: inline-block;
@@ -43,7 +43,6 @@ not supported by any browser */
     line-height: 35px;
     border-bottom: 1px solid black;
     border-radius: 20px 20px 0 0;
-    
 }
 .front-end li{
     margin-left: 20px;
@@ -52,11 +51,12 @@ not supported by any browser */
     font-weight: 200 
 }
 .back-end{
-    width: 600px;
+    width: 39%;
     height: 220px;
+    /* overflow-y:auto; */
     background-color: #99CC99;
     color: white;
-    margin-top: 70px;
+    margin-top: 4.5%;
     margin-left: 10px;
     border-radius:20px; 
     border: 1px solid black;
@@ -85,7 +85,7 @@ not supported by any browser */
     font-weight: 200 
 }
 .mini{
-    width: 600px;
+    width: 39%;
     height: 320px;
     background-color: #FF6666;
     color: white;
@@ -119,11 +119,13 @@ not supported by any browser */
     font-weight: 200
 }
 .server{
-    width: 300px;
+    width: 20%;
     height: 180px;
+    overflow-y:auto;
     background-color: #99CCCC;
     color: white;
-    margin-top: -220px;
+    position: absolute;
+    margin-top: 4.5%;
     margin-left: 10px;
     border-radius:20px; 
     border: 1px solid black;
@@ -153,8 +155,9 @@ not supported by any browser */
     font-weight: 200;
 }
 .ai{
-    width: 300px;
+    width: 20%;
     height: 360px;
+    overflow-y:auto;
     background-color: #FFCCCC;
     color: white;
     margin-top: -30px;
@@ -306,3 +309,140 @@ not supported by any browser */
       transform:translateX(-100%);
     }
  }
+
+
+
+.front-end .lie{
+  height: 490px;
+  overflow-y:auto;
+}
+.front-end .lie::-webkit-scrollbar
+{
+  width: 5px;
+  /* height: 10px; */
+  background-color: #99CC33;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.front-end .lie::-webkit-scrollbar-track
+{
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+  border-radius: 20px;
+  background-color: #99CC33;
+}
+/*定义滑块 内阴影+圆角*/
+.front-end .lie::-webkit-scrollbar-thumb
+{
+  border-radius: 20px;
+  /* width: 1px; */
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+  background-color: #ccc;
+}
+
+
+.back-end .lie{
+  height: 170px;
+  /* background: red; */
+  overflow-y:auto;
+}
+.back-end .lie::-webkit-scrollbar
+{
+  width: 5px;
+  /* height: 10px; */
+  background-color: #99CC99;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.back-end .lie::-webkit-scrollbar-track
+{
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+  border-radius: 20px;
+  background-color: #99CC99;
+}
+/*定义滑块 内阴影+圆角*/
+.back-end .lie::-webkit-scrollbar-thumb
+{
+  border-radius: 20px;
+  /* width: 1px; */
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+  background-color: #ccc;
+}
+
+.mini .lie{
+  height: 270px;
+  /* background: red; */
+  overflow-y:auto;
+}
+.mini .lie::-webkit-scrollbar
+{
+  width: 5px;
+  /* height: 10px; */
+  background-color: #FF6666;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.mini .lie::-webkit-scrollbar-track
+{
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+  border-radius: 20px;
+  background-color: #FF6666;
+}
+/*定义滑块 内阴影+圆角*/
+.mini .lie::-webkit-scrollbar-thumb
+{
+  border-radius: 20px;
+  /* width: 1px; */
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+  background-color: #ccc;
+}
+
+.server .lie{
+  height: 130px;
+  /* background: red; */
+  overflow-y:auto;
+}
+.server .lie::-webkit-scrollbar
+{
+  width: 5px;
+  /* height: 10px; */
+  background-color: #99CCCC;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.server .lie::-webkit-scrollbar-track
+{
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+  border-radius: 20px;
+  background-color: #99CCCC;
+}
+/*定义滑块 内阴影+圆角*/
+.server .lie::-webkit-scrollbar-thumb
+{
+  border-radius: 20px;
+  /* width: 1px; */
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+  background-color: #ccc;
+}
+
+.ai .lie{
+  height: 310px;
+  /* background: red; */
+  overflow-y:auto;
+}
+.ai .lie::-webkit-scrollbar
+{
+  width: 5px;
+  /* height: 10px; */
+  background-color: #FFCCCC;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.ai .lie::-webkit-scrollbar-track
+{
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+  border-radius: 20px;
+  background-color: #FFCCCC;
+}
+/*定义滑块 内阴影+圆角*/
+.ai .lie::-webkit-scrollbar-thumb
+{
+  border-radius: 20px;
+  /* width: 1px; */
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+  background-color: #ccc;
+}
