@@ -29,11 +29,6 @@ not supported by any browser */
     transform: translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-.front-end:hover,.back-end:hover,.mini:hover,.server:hover,.ai:hover{
-  -webkit-transform: scale(1.02);
-  transform: scale(1.02);
-  /* z-index: 1000000000000000000000000; */
-}
 .front-end .Title{
     text-align: center;
     background: white;
@@ -445,4 +440,123 @@ not supported by any browser */
   /* width: 1px; */
   /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
   background-color: #ccc;
+}
+@media screen and (max-width: 500px){
+  .front-end{
+    width:85%;
+    height: 400px;
+    background-color: #99CC33;
+    color: white;
+    margin-top: 0 auto;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    border-radius:20px; 
+    border: 1px solid black;
+}
+.front-end .lie{
+  width: 99.8%;
+  height: 340px;
+  overflow-y:auto;
+}
+.front-end .lie::-webkit-scrollbar
+{
+  width: 5px;
+  /* height: 10px; */
+  background-color: #99CC33;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.front-end .lie::-webkit-scrollbar-track
+{
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+  border-radius: 20px;
+  background-color: #99CC33;
+}
+/*定义滑块 内阴影+圆角*/
+.front-end .lie::-webkit-scrollbar-thumb
+{
+  border-radius: 20px;
+  /* width: 1px; */
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+  background-color: #ccc;
+}
+.back-end{
+  width: 40%;
+  height: 220px;
+  /* overflow-y:auto; */
+  background-color: #99CC99;
+  color: white;
+  /* margin-top: 4.5%; */
+  /* margin: 0 auto; */
+  /* margin-left: 10px; */
+  margin-left: 28%;
+  transform: translate(-50%,0);
+  border-radius:20px; 
+  /* float: left; */
+  border: 1px solid black;
+}
+.mini{
+  width: 40%;
+  height: 220px;
+  background-color: #FF6666;
+  color: white;
+  margin-top: 0;
+  margin-left: 73%;
+  transform: translate(-50%,-100%);
+  border-radius:20px;
+  border: 1px solid black;
+}
+.mini .lie{
+  height: 160px;
+  /* background: red; */
+  overflow-y:auto;
+}
+.mini .lie::-webkit-scrollbar
+{
+  width: 5px;
+  /* height: 10px; */
+  background-color: #FF6666;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.mini .lie::-webkit-scrollbar-track
+{
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+  border-radius: 20px;
+  background-color: #FF6666;
+}
+/*定义滑块 内阴影+圆角*/
+.mini .lie::-webkit-scrollbar-thumb
+{
+  border-radius: 20px;
+  /* width: 1px; */
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+  background-color: #ccc;
+}
+.server{
+  position: relative;
+  width: 40%;
+  height: 210px;
+  background-color:#99CCCC ;
+  color: white;
+  margin-top: 0;
+  margin-left: 28%;
+  transform: translate(-50%,-100%);
+  border-radius:20px;
+  border: 1px solid black;
+}
+.ai{
+  width: 40%;
+  height: 210px;
+  background-color: #FFCCCC;
+  color: white;
+  margin-top: 0;
+  margin-left: 73%;
+  transform: translate(-50%,-200%);
+  border-radius:20px;
+  border: 1px solid black;
+}
+.ai .lie{
+  height: 150px;
+  /* background: red; */
+  overflow-y:auto;
+}
 }

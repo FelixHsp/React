@@ -48,7 +48,7 @@ class Foot extends Component{
         <div className="Foot">
             <div>const Date = {this.state.date}</div>
             <div>const School = NEAU</div>
-            <div>const Add = 黑龙江省哈尔滨市</div>
+            <div>const Add = 哈尔滨</div>
             <div>const ...</div>
         </div>
       )

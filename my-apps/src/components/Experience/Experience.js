@@ -71,19 +71,19 @@ export default class Experience extends Component {
                         <div className="content-con">
                             我的第一个真正意义上的团队项目
                         </div>
-                        <img src="https://s2.ax1x.com/2019/05/13/E5hLAf.jpg" className="ima"></img>
-                        <img src="https://s2.ax1x.com/2019/05/13/E5hX4S.jpg" className="imb" ></img>
-                        <img src="https://s2.ax1x.com/2019/05/13/E5hHBt.jpg" className="ima"></img>
-                        <img src="https://s2.ax1x.com/2019/05/13/E5hON8.jpg" className="imb" ></img>
+                        <img src="https://s2.ax1x.com/2019/05/13/E5hLAf.jpg" className="ima" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/13/E5hX4S.jpg" className="imb" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/13/E5hHBt.jpg" className="ima" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/13/E5hON8.jpg" className="imb"  alt=""/>
                         <div className="content-con">
                             该小程序的页面均是从json获取到数据渲染出来的
                         </div>
-                        <img src="https://s2.ax1x.com/2019/05/13/E5hojA.png" className="imc"></img>
-                        <img src="https://s2.ax1x.com/2019/05/13/E5h7nI.png" className="imc"></img>
+                        <img src="https://s2.ax1x.com/2019/05/13/E5hojA.png" className="imc" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/13/E5h7nI.png" className="imc" alt=""/>
                         <div className="content-con">
                             利用外部js,制作canvas图表
                         </div>
-                        <img src="https://s2.ax1x.com/2019/05/13/E5hbHP.png" className="imc"></img>
+                        <img src="https://s2.ax1x.com/2019/05/13/E5hbHP.png" className="imc" alt=""/>
                     </div>
                     <div className="bot">
                     </div>
@@ -99,6 +99,29 @@ export default class Experience extends Component {
                         纪念日H5页面
                     </div>
                     <div className="content">
+                        <div className="content-title">
+                        <text>></text>
+                            一周年纪念日H5页面
+                        </div>
+                        <div className="content-con">
+                            利用css3等做特效,定时器做时钟表。
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/05/14/EISFyt.jpg" className="ima" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/14/EISZTS.jpg" className="imb" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/14/EISmFg.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            canvas做图形特效,hover伪类元素做动画。
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/05/14/EISMSs.jpg" className="ima" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/14/EISuWj.jpg" className="imb" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/14/EIS1O0.png" className="imc" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/14/EISlyq.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            可以点下方链接预览:
+                        </div>
+                        <div className="yulan">
+                            <a href="http://www.grx.xn--6qq986b3xl/" target="_blank" className="go">www.grx.我爱你(手机)</a>
+                        </div>
                     </div>
                     <div className="bot">
                     </div>
@@ -114,6 +137,20 @@ export default class Experience extends Component {
                         十九大H5页面
                     </div>
                     <div className="content">
+                        <div className="content-title">
+                        <text>></text>
+                            bootstrap移动端响应式H5页面
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/05/14/EISBOx.jpg" className="ima" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/14/EISrm6.jpg" className="imb" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/14/EISs0K.jpg" className="ima" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/14/EIS061.jpg" className="imb" alt=""/>
+                        <div className="content-con">
+                            可以点下方链接预览:
+                        </div>
+                        <div className="yulan">
+                            <a href="https://felixhsp.github.io/bootstrap-test/" target="_blank" className="go">https://felixhsp.github.io/bootstrap-test/(手机)</a>
+                        </div>
                     </div>
                     <div className="bot">
                     </div>
@@ -122,6 +159,7 @@ export default class Experience extends Component {
                 </div>
                 <div className="mr" onClick={() => { this.open(4) }}>
                     <img src="https://s2.ax1x.com/2019/05/13/E50XQS.png" alt="" />
+                    <div className="xing">*</div>
                     <p>铭仁中医门诊项目</p>
                 </div>
                 <div className={this.state.modal4}>
@@ -129,6 +167,43 @@ export default class Experience extends Component {
                         铭仁中医门诊项目
                     </div>
                     <div className="content">
+                        <div className="content-title">
+                            <text>></text>
+                            中医门诊（团队项目）
+                        </div>
+                        <div className="content-con">
+                            本人负责后台管理系统的部分前端和整体后端的制作，以及数据库的建立。
+                        </div>
+                        <div className="content-con">
+                            项目简介：病人可以通过小程序端进行预约挂号，查看之前的病例，以及向医生寻诊等。医生可以通过后台管理系统管理余号，查看挂号列表，向病人发布病例等。其中我负责的后台管理系统，整体使用iview-admin框架实现前端部署，PHP ci框架实现后端与数据库的构建。
+                        </div>
+                        <div className="content-con">
+                            原型设计:
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/05/14/EISOpj.png" className="imc" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/14/EISqhQ.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            base64实现图片上传
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/05/14/EIpSBV.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            病种列表
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/05/14/EIpp7T.png" className="imc" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/14/EIpEcR.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            markdown实现富文本编辑器
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/05/14/EISzn0.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            数据库:
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/05/14/EIpenx.png" className="imc" alt=""/>
+                        <img src="" alt=""/>
+                        <div className="content-con">
+                            部分CI控制器:
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/05/14/EIpVj1.png" className="imc" alt=""/>
                     </div>
                     <div className="bot">
                     </div>
@@ -138,6 +213,7 @@ export default class Experience extends Component {
 
                 <div className="flower" onClick={() => { this.open(5) }}>
                     <img src="https://s2.ax1x.com/2019/05/13/E5B4pV.png" alt="" />
+                    <div className="xing">*</div>
                     <p>花由习生</p>
                 </div>
                 <div className={this.state.modal5}>
@@ -145,6 +221,47 @@ export default class Experience extends Component {
                         花由习生
                     </div>
                     <div className="content">
+                        <div className="content-title">
+                            <text>></text>
+                            担任项目负责人,负责UI设计、部分前端页面、整体后端与数据库。（小程序云开发）
+                        </div>
+                        <div className="content-con">
+                            名字灵感：我们以“花”代表当代大学生对未来美好生活的向往，以“习”代表艰苦学习的精神。“花由习生”寓意着：美好的未来生活，只能通过现在的艰苦学习和努力奋斗来换得。
+                        </div>
+                        <div className="content-con">
+                            logo:
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/05/14/EIpsvn.jpg" className="imd" alt=""/>
+                        <div className="content-con">
+                            项目简介：“花由习生”小程序主要通过“养花”给予用户一定奖励，让用户在日常生活中放下手机，帮助用户提升学习效率或办公效率。
+                        </div>
+                        <div className="content-con">
+                            原型设计：
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/05/14/EI9mxs.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            部分页面：
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/05/14/EI9AIS.png" className="ima" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/14/EI9ka8.png" className="imb" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/14/EI9VPg.png" className="ima" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/14/EI9FVf.png" className="imb" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/14/EI9ZGQ.png" className="ima" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/14/EI9e2j.png" className="imb" alt=""/>
+                        <div className="content-con">
+                            数据库：
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/05/14/EI9PqP.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            GitHub：
+                        </div>
+                        <div className="yulan">
+                            <a href="https://github.com/FelixHsp/Learning-from-life" target="_blank" className="go">https://github.com/FelixHsp/Learning-from-life</a>
+                        </div>
+                        <div className="content-con">
+                            扫一扫体验小程序
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/05/14/EI9JG4.jpg" className="imd" alt=""/>
                     </div>
                     <div className="bot">
                     </div>
@@ -161,6 +278,34 @@ export default class Experience extends Component {
                         砰砰记账
                     </div>
                     <div className="content">
+                        <div className="content-title">
+                            <text>></text>
+                            UI设计，部分前端页面，整体后台与数据库。（小程序云开发）
+                        </div>
+                        <div className="content-con">
+                            项目简介：通过添加每日账单，并具有自动计算整月支出总和功能，方便用户进行每日金钱的花销控制。                        
+                        </div>
+                        <div className="content-con">
+                            部分页面：
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/05/14/EI9TJg.png" className="ima" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/14/EI9heP.png" className="imb" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/14/EI9oFS.png" className="ima" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/05/14/EI9WLt.png" className="imb" alt=""/>
+                        <div className="content-con">
+                            数据库：
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/05/14/EI95o8.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            GitHub：
+                        </div>
+                        <div className="yulan">
+                            <a href="https://github.com/FelixHsp/pengpeng" target="_blank" className="go">https://github.com/FelixHsp/pengpeng</a>
+                        </div>
+                        <div className="content-con">
+                            扫一扫体验小程序
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/05/14/EI94df.jpg" className="imd" alt=""/>
                     </div>
                     <div className="bot">
                     </div>

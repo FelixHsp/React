@@ -1,0 +1,87 @@
+.about .gif{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-90%);
+    border-radius: 50px;
+}
+.about .git{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    top: 50%;
+    left: 28%;
+}
+.about .wechat{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    top: 65%;
+    left: 40%;
+}
+.about .qq{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    top: 65%;
+    left: 56%;
+    transform: translate(-50%,0);
+}
+.about .csdn{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    top: 50%;
+    left: 68%;
+    transform: translate(-50%,0);
+}
+.git:hover,.wechat:hover{
+    animation:ho 0.8s linear;
+}
+.qq:hover,.csdn:hover{
+    position:absolute;
+    /* left: 50%; */
+    animation:ho1 0.8s linear;
+}
+@keyframes ho{
+    0%{ -webkit-transform: translateY(-10px);transform: translateY(-10px);}
+    20%{-webkit-transform: translateY(0);transform: translateY(0);}
+    40%{-webkit-transform: translateY(-6px);transform: translateY(-6px);}
+    60%{-webkit-transform: translateY(0);transform: translateY(0);}
+    80%{-webkit-transform: translateY(-4px);transform: translateY(-4px);}
+    100%{-webkit-transform: translateY(0);transform: translateY(0);}
+}
+@keyframes ho1{
+    0%{margin-top: -10px}
+    20%{margin-top: 0}
+    40%{margin-top: -6px}
+    60%{margin-top: 0}
+    80%{margin-top: -4px}
+    100%{margin-top: 0}
+}
+@media screen and (max-width: 500px){
+    .about .gif{
+        width: 50%;
+    }
+    .about .git{
+        top: 45%;
+        left: 5%;
+    }
+    .about .wechat{
+        top: 60%;
+        left: 25%;
+    }
+    .about .qq{
+        top: 60%;
+        left: 65%;
+        /* transform: translate(-50%,0); */
+    }
+    .about .csdn{
+        top: 45%;
+        left: 87%;
+    }
+}

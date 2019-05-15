@@ -25,7 +25,8 @@ class App extends Component {
         bg8:'',
         bg9:'',
         bg10:'',
-        begin:'begin'
+        begin:'begin',
+        beginn:'beginn'
     }
     this.click = this.click.bind(this)
 }
@@ -70,6 +71,7 @@ class App extends Component {
     }, 1900);
   }
   componentDidMount(){
+    
     this.setState({
       bg1:'bg1',
       bg2:'bg2',
@@ -102,6 +104,11 @@ class App extends Component {
         begin:'begin2'
       })
     }, 1900);
+    setTimeout(()=>{
+      this.setState({
+        beginn:'beginn1'
+      })
+    },2000)
   }
   render() {
     return (
@@ -129,6 +136,9 @@ class App extends Component {
             <div className={this.state.bg8}></div>
             <div className={this.state.bg9}></div>
             <div className={this.state.bg10}></div>
+          </div>
+          <div className={this.state.beginn}>
+            <img src="https://s2.ax1x.com/2019/05/14/Eotdrd.gif"  alt=""/>
           </div>
           <Route path="/work" component={Work}></Route>
           <Route path="/experience" component={Experience}></Route>
