@@ -6,7 +6,7 @@ import Work from './components/Work/Work'
 import Home from './components/Home/Home'
 
 import './App.css'
-// import axios from 'axios';
+import axios from 'axios';
 class App extends Component {
   constructor(props) {
     super(props);
@@ -71,7 +71,6 @@ class App extends Component {
     }, 1900);
   }
   componentDidMount(){
-    
     this.setState({
       bg1:'bg1',
       bg2:'bg2',
@@ -158,24 +157,26 @@ class Time extends Component{
   constructor() {
     super();
     this.state = {
-        date: new Date()
+        date: ""
     };
   }
   componentDidMount() {
-      this.timer = setInterval(()=>this.tick(),1000)
-  }
-  tick() {
-      this.setState({
-          date : new Date()
-      })
-  }
-  test(){
-    console.log(111)
+      setInterval(() => {
+        axios({
+          method: "get",
+          url: "http://quan.suning.com/getSysTime.do"
+        }).then(res => {
+          // console.log(JSON.stringify(res.data.sysTime2));
+          this.setState({
+            date:res.data.sysTime2
+          })
+        });
+      }, 1000);
   }
   render(){
     return(
-      <div className='Time' onClick={this.test}>
-        {this.state.date.toLocaleTimeString()}
+      <div className='Time'>
+        {this.state.date}
       </div>
     )
   }
