@@ -16,15 +16,17 @@ export default class Home extends Component {
             tag: false,
             tag2: "",
             zan: "",
-            list:[]
+            list:[],
+            message:""
         }
         this.bindTap = this.bindTap.bind(this)
+        this.bindTap2 = this.bindTap2.bind(this)
         this.open = this.open.bind(this)
     }
     componentDidMount() {
         axios({
             method: 'get',
-            url: 'http://localhost:8083/felixblog/Message/getzan'
+            url: 'http://106.15.188.71/felixblog/Message/getzan'
         }).then((res) => {
             // console.log(res.data.data[0].z_value)
             this.setState({
@@ -63,12 +65,12 @@ export default class Home extends Component {
                     return str.join('&')
                 }
             }).then(res => {
-                console.log(res.data.data[0].u_name)
+                // console.log(res.data.data[0].u_name)
                 this.setState({
                     name: res.data.data[0].u_name,
                     cit: res.data.data[0].u_city
                 })
-                console.log(this.state)
+                // console.log(this.state)
             }).catch(err => {
                 console.log(err)
             })
@@ -82,7 +84,7 @@ export default class Home extends Component {
             ['modall' + name]: ["modall" + name]
         })
         if (name == 3) {
-            console.log(this.state)
+            // console.log(this.state)
             axios({
                 url: 'http://106.15.188.71/felixblog/Message/seuser',
                 method: 'post',
@@ -95,7 +97,7 @@ export default class Home extends Component {
                     return str.join('&')
                 }
             }).then(res => {
-                console.log(this.state.tag)
+                // console.log(this.state.tag)
                 if (res.data.data[0]) {
                     this.setState({
                         con: "contentnone",
@@ -118,14 +120,17 @@ export default class Home extends Component {
         if (name == 2) {
             if (this.state.name == "") {
                 alert("请先点击右边按钮进行注册")
+                this.setState({
+                    modall2: "modaldell"
+                })
             } else {
                 console.log(2)
                 axios({
                     method: 'get',
-                    url: 'http://localhost:8083/felixblog/Message/getmes'
+                    url: 'http://106.15.188.71/felixblog/Message/getmes'
                 }).then((res) => {
                     this.setState({
-                        list:res.data.data
+                        list:res.data.data.reverse()
                     })
                     console.log(this.state.list)
                 })
@@ -141,11 +146,11 @@ export default class Home extends Component {
                 this.setState({
                     zan: this.state.zan * 1 + 1
                 })
-                console.log(this.state)
+                // console.log(this.state)
             }, 1500)
             setTimeout(() => {
                 axios({
-                    url: 'http://localhost:8083/felixblog/Message/addzan',
+                    url: 'http://106.15.188.71/felixblog/Message/addzan',
                     method: 'post',
                     data: this.state,
                     transformRequest: function (obj) {
@@ -223,6 +228,37 @@ export default class Home extends Component {
             }
         }, 2000)
     }
+    bindTap2() {
+        console.log(this.refs.inp2.value)
+        var addmessage = this.state
+        addmessage.message = this.refs.inp2.value
+        console.log(addmessage)
+        setTimeout(()=>{
+            axios({
+                url: 'http://106.15.188.71/felixblog/Message/addmes',
+                method: 'post',
+                data: addmessage,
+                transformRequest: function (obj) {
+                    var str = []
+                    for (var p in obj) {
+                        str.push(encodeURIComponent(p) + '=' + encodeURIComponent(obj[p]))
+                    }
+                    return str.join('&')
+                }
+            }).then(res => {
+                console.log(res)
+                axios({
+                    method: 'get',
+                    url: 'http://106.15.188.71/felixblog/Message/getmes'
+                }).then((res) => {
+                    this.setState({
+                        list:res.data.data.reverse()
+                    })
+                    console.log(this.state.list)
+                })
+            })
+        },2000)
+    }
     render() {
         return (
             <div className='Home'>
@@ -251,9 +287,12 @@ export default class Home extends Component {
                                 {
                                 this.state.list.map(function(name){
                                     return (
-                                        <ul key={name.m_id}>
+                                        <ul key={name.m_id} className="liuyan">
+                                            <li>{name.m_user}</li>
                                             <li>{name.m_content}</li> 
-                                            <li>{name.m_fabulous}</li>
+                                            {/* <li>{name.m_fabulous}</li> */}
+                                            <li>{name.m_date}</li>
+                                            <li>{name.m_city}</li>
                                         </ul>
                                     )
                                 })
@@ -262,6 +301,10 @@ export default class Home extends Component {
                         <div className="bot">
                         </div>
                         <div className="del" onClick={() => { this.delt(2) }}>
+                        </div>
+                        <div className="liuyanadd">
+                                <input type="text" ref="inp2" />
+                                <div onClick={this.bindTap2} className="butt">留言</div>
                         </div>
                     </div>
                 </div>
