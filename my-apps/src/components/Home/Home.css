@@ -447,7 +447,17 @@ li{
     right: 15px;
     cursor: pointer;
 }
-
+.jia{
+    color: #999;
+    /* background: #FF6666; */
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    width: 100px;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    cursor: pointer;
+}
 @keyframes ho{
     0%{ -webkit-transform: translateY(-10px);transform: translateY(-10px);}
     20%{-webkit-transform: translateY(0);transform: translateY(0);}

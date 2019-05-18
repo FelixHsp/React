@@ -21,6 +21,7 @@ export default class Home extends Component {
         }
         this.bindTap = this.bindTap.bind(this)
         this.bindTap2 = this.bindTap2.bind(this)
+        this.bindTap3 = this.bindTap3.bind(this)
         this.open = this.open.bind(this)
     }
     componentDidMount() {
@@ -129,10 +130,16 @@ export default class Home extends Component {
                     method: 'get',
                     url: 'http://106.15.188.71/felixblog/Message/getmes'
                 }).then((res) => {
+                    var lis=[];
+                    var lis2=[];
+                    lis2=res.data.data.reverse()
+                    for(var i=0;i<10;i++){
+                        lis[i]=lis2[i]
+                    }
+                    console.log(lis)
                     this.setState({
-                        list:res.data.data.reverse()
+                        list:lis
                     })
-                    console.log(this.state.list)
                 })
             }
         }
@@ -233,6 +240,7 @@ export default class Home extends Component {
         var addmessage = this.state
         addmessage.message = this.refs.inp2.value
         console.log(addmessage)
+        this.refs.inp2.value=""
         setTimeout(()=>{
             axios({
                 url: 'http://106.15.188.71/felixblog/Message/addmes',
@@ -251,13 +259,49 @@ export default class Home extends Component {
                     method: 'get',
                     url: 'http://106.15.188.71/felixblog/Message/getmes'
                 }).then((res) => {
+                    var lis=[];
+                    var lis2=[];
+                    lis2=res.data.data.reverse()
+                    for(var i=0;i<10;i++){
+                        lis[i]=lis2[i]
+                    }
                     this.setState({
-                        list:res.data.data.reverse()
+                        list:lis
                     })
+                    alert('添加成功')
                     console.log(this.state.list)
                 })
             })
-        },2000)
+        },100)
+    }
+    bindTap3(){
+        console.log(this.state.list.length)
+        axios({
+            method: 'get',
+            url: 'http://106.15.188.71/felixblog/Message/getmes'
+        }).then((res) => {
+            var lis=[];
+            var lis2=[];
+            var tap;
+            lis2=res.data.data.reverse()
+            console.log(res.data.data.length)
+            if(this.state.list.length*1+10<res.data.data.length){
+                for(var i=0;i<this.state.list.length*1+10;i++){
+                    lis[i]=lis2[i]
+                }
+            }else if(this.state.list.length*1+10>=res.data.data.length){
+                for(var i=0;i<res.data.data.length;i++){
+                    lis[i]=lis2[i]
+                }
+                if(this.state.list.length*1==res.data.data.length){
+                    alert('暂无更多')
+                }
+            }
+            console.log(lis)
+            this.setState({
+                list:lis
+            })
+        })
     }
     render() {
         return (
@@ -297,6 +341,7 @@ export default class Home extends Component {
                                     )
                                 })
                                 }
+                                <div onClick={this.bindTap3} className="jia">点击加载更多</div>
                         </div>
                         <div className="bot">
                         </div>
