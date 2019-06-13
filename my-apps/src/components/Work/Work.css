@@ -16,7 +16,7 @@ not supported by any browser */
     height: 550px;
     background-color: #99CC33;
     color: white;
-    margin-top: 4.5%;
+    margin-top: 6%;
     margin-left: 7%;
     border-radius:20px; 
     border: 1px solid black;
@@ -51,7 +51,7 @@ not supported by any browser */
     /* overflow-y:auto; */
     background-color: #99CC99;
     color: white;
-    margin-top: 4.5%;
+    margin-top: 6%;
     margin-left: 10px;
     border-radius:20px; 
     border: 1px solid black;
@@ -120,7 +120,7 @@ not supported by any browser */
     background-color: #99CCCC;
     color: white;
     position: absolute;
-    margin-top: 4.5%;
+    margin-top: 6%;
     margin-left: 10px;
     border-radius:20px; 
     border: 1px solid black;
