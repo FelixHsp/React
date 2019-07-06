@@ -220,6 +220,12 @@ export default class Experience extends Component {
                         <div className="yulan">
                             <a href="http://123.207.216.106/iotcar.mp4" target="_blank" className="go">http://123.207.216.106/iotcar.mp4</a>
                         </div>
+                        <div className="content-con">
+                            bilibili地址：(上述地址不可用时可点击此链接)
+                        </div>
+                        <div className="yulan">
+                            <a href="https://www.bilibili.com/video/av58061881/" target="_blank" className="go">https://www.bilibili.com/video/av58061881/</a>
+                        </div>
                     </div>
                     <div className="bot">
                     </div>
