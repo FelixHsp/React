@@ -9,7 +9,8 @@ export default class Experience extends Component {
             modal3: "modaldel",
             modal4: "modaldel",
             modal5: "modaldel",
-            modal6: "modaldel"
+            modal6: "modaldel",
+            modal7: "modaldel"
         }
         this.delt = this.delt.bind(this)
         this.open = this.open.bind(this)
@@ -41,6 +42,7 @@ export default class Experience extends Component {
             modal4: "modaldel",
             modal5: "modaldel",
             modal6: "modaldel",
+            modal7: "modaldel",
             ['modal' + name]: ["modal" + name]
         })
     }
@@ -52,6 +54,9 @@ export default class Experience extends Component {
                 </div>
                 <div className="experience-font">
                     前端项目
+                </div>
+                <div className="experience-iot">
+                    IOT项目
                 </div>
                 <div className="lvshi" onClick={() => { this.open(1) }}>
                     <img src="https://s2.ax1x.com/2019/05/13/E5Jz6A.png" alt="" />
@@ -157,6 +162,71 @@ export default class Experience extends Component {
                     <div className="del" onClick={() => { this.delt(3) }}>
                     </div>
                 </div>
+
+                <div className="iotcar" onClick={() => { this.open(7) }}>
+                    <img src="https://i.loli.net/2019/07/06/5d20377632d9f32987.png" alt="" />
+                    <div className="xing">*</div>
+                    <p>智能巡视车</p>
+                </div>
+                <div className={this.state.modal7}>
+                    <div className="title">
+                        智能巡视车
+                    </div>
+                    <div className="content">
+                    <div className="content-title">
+                            <text>></text>
+                            基于华为云iot平台的智能巡视车(可无限距离超远程实时遥控)
+                        </div>
+                        <div className="content-con">
+                            使用的开发板：树莓派3b+、小熊派、Arduino   
+                        </div>
+                        <div className="content-con">
+                            项目简介：</div>
+                        <div className="content-con">
+                            (1)使用小程序接入华为云iot平台的北向API，定时获取到园区内环境数据，并在小程序端展示出来。
+                        </div>
+                        <div className="content-con">
+                            (2)使用微信小程序接入华为云ECS服务器，获取到树莓派上传的人员数据，实时展示出来。
+                        </div>
+                        <div className="content-con">
+                            (3)使用微信小程序，将树莓派获取到的实时视频在小程序端展示，人工远程操作小车移动。
+                        </div>
+                        <img src="https://i.loli.net/2019/07/06/5d203e0a1516c27087.jpg" className="imc "></img>
+                        <div className="content-con">
+                            Arduino控制小车电机
+                        </div>
+                        <img src="https://i.loli.net/2019/07/06/5d203b7eb853054214.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            搭载tensorflow的树莓派实现人脸识别
+                        </div>
+                        <img src="https://i.loli.net/2019/07/06/5d203b7eddbcd79081.png" className="imc" alt=""/>
+                        <img src="https://i.loli.net/2019/07/06/5d203b7ef2f9412957.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            华为云iot平台开发
+                        </div>
+                        <img src="https://i.loli.net/2019/07/06/5d203b7e7be8b79536.png" className="imc" alt=""/>
+                        <img src="https://i.loli.net/2019/07/06/5d203b7e8476c91433.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            对接华云云iot平台的北向API开发（PHP）
+                        </div>
+                        <img src="https://i.loli.net/2019/07/06/5d203b7ea9ba839733.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            智慧园区小程序（环境数据查看，遥控巡视车）
+                        </div>
+                        <img src="https://i.loli.net/2019/07/06/5d203b7e9517290232.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            预览视频地址：
+                        </div>
+                        <div className="yulan">
+                            <a href="http://123.207.216.106/iotcar.mp4" target="_blank" className="go">http://123.207.216.106/iotcar.mp4</a>
+                        </div>
+                    </div>
+                    <div className="bot">
+                    </div>
+                    <div className="del" onClick={() => { this.delt(7) }}>
+                    </div>
+                </div>
+
                 <div className="mr" onClick={() => { this.open(4) }}>
                     <img src="https://s2.ax1x.com/2019/05/13/E50XQS.png" alt="" />
                     <div className="xing">*</div>
