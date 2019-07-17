@@ -299,7 +299,7 @@ export default class Experience extends Component {
                     <div className="content">
                         <div className="content-title">
                             <text>></text>
-                            担任项目负责人,负责UI设计、部分前端页面、整体后端与数据库。（小程序云开发）
+                            担任项目负责人,负责UI设计、部分前端页面、整体后端与数据库。（2019微信高校小程序大赛 东北赛区第二 晋级全国总决赛）
                         </div>
                         <div className="content-con">
                             名字灵感：我们以“花”代表当代大学生对未来美好生活的向往，以“习”代表艰苦学习的精神。“花由习生”寓意着：美好的未来生活，只能通过现在的艰苦学习和努力奋斗来换得。
