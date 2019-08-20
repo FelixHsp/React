@@ -10,7 +10,8 @@ export default class Experience extends Component {
             modal4: "modaldel",
             modal5: "modaldel",
             modal6: "modaldel",
-            modal7: "modaldel"
+            modal7: "modaldel",
+            modal8:"modaldel"
         }
         this.delt = this.delt.bind(this)
         this.open = this.open.bind(this)
@@ -43,6 +44,7 @@ export default class Experience extends Component {
             modal5: "modaldel",
             modal6: "modaldel",
             modal7: "modaldel",
+            modal8:"modaldel",
             ['modal' + name]: ["modal" + name]
         })
     }
@@ -56,7 +58,7 @@ export default class Experience extends Component {
                     前端项目
                 </div>
                 <div className="experience-iot">
-                    IOT项目
+                    其他项目
                 </div>
                 <div className="lvshi" onClick={() => { this.open(1) }}>
                     <img src="https://s2.ax1x.com/2019/05/13/E5Jz6A.png" alt="" />
@@ -233,6 +235,56 @@ export default class Experience extends Component {
                     </div>
                 </div>
 
+                <div className="music" onClick={() => { this.open(8) }}>
+                    <img src="https://s2.ax1x.com/2019/08/20/mJwvQg.png" alt="" />
+                    <div className="xing">*</div>
+                    <p>mac本地音乐播放器</p>
+                </div>
+                <div className={this.state.modal8}>
+                    <div className="title">
+                    mac本地音乐播放器
+                    </div>
+                    <div className="content">
+                    <div className="content-title">
+                            <text>></text>
+                            Mac os本地音乐播放器
+                        </div>
+                        <div className="content-con">
+                            项目简介：</div>
+                        <div className="content-con">
+                            使用electron制作的mac os的本地音乐播放器，可以导入音乐，播放音乐，制作歌单等，使用本地文件存储。并打包成dmg文件，可在任意mac上安装。
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/08/20/mJDeaR.png" className="imc "></img>
+                        <div className="content-con">
+                            播放器展示
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/08/20/mJDfzT.png" className="imc" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/08/20/mJD5yF.png" className="imc" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/08/20/mJD4QU.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            dmg文件
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/08/20/mJrKTs.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            dmg文件下载
+                        </div>
+                        <div className="yulan">
+                            <a href="https://pan.baidu.com/s/1uEM6eLN0DE-t9uwh3EgJjQ" target="_blank" className="go">https://pan.baidu.com/s/1uEM6eLN0DE-t9uwh3EgJjQ</a>
+                        </div>
+                        <div className="content-con">
+                            GitHub：
+                        </div>
+                        <div className="yulan">
+                            <a href="https://github.com/FelixHsp/macMusic.git" target="_blank" className="go">https://github.com/FelixHsp/macMusic.git</a>
+                        </div>
+                    </div>
+                    <div className="bot">
+                    </div>
+                    <div className="del" onClick={() => { this.delt(8) }}>
+                    </div>
+                </div>
+
+
                 <div className="mr" onClick={() => { this.open(4) }}>
                     <img src="https://s2.ax1x.com/2019/05/13/E50XQS.png" alt="" />
                     <div className="xing">*</div>
@@ -308,6 +360,7 @@ export default class Experience extends Component {
                             logo:
                         </div>
                         <img src="https://s2.ax1x.com/2019/05/14/EIpsvn.jpg" className="imd" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/08/20/mJ6kf1.jpg" className="imc"></img>
                         <div className="content-con">
                             项目简介：“花由习生”小程序主要通过“养花”给予用户一定奖励，让用户在日常生活中放下手机，帮助用户提升学习效率或办公效率。
                         </div>
