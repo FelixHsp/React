@@ -142,7 +142,7 @@
 }
 .modall1 .zan,.modall1del .zan{
     color: white;
-    background: #FF9900;
+    background: steelblue;
     font-size: 18px;
     border-radius: 20px;
     width: 200px;
@@ -216,7 +216,7 @@
     line-height: 35px;
     position: relative;
     color:white;
-    background:#FF9900;
+    background:steelblue;
     border: 1px solid black;
     width: 50%;
     text-align: center;
@@ -254,7 +254,7 @@ li{
     color: black;
 }
 .liuyan li:nth-child(2){
-    background: #FF9900;
+    background: steelblue;
     color: white;
     height: 40px;
     margin-top: 20px;

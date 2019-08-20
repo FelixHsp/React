@@ -137,7 +137,7 @@ class App extends Component {
             <div className={this.state.bg10}></div>
           </div>
           <div className={this.state.beginn}>
-            <img src="https://s2.ax1x.com/2019/05/14/Eotdrd.gif"  alt=""/>
+            <img src="https://s2.ax1x.com/2019/08/20/mJtsld.gif"  alt=""/>
           </div>
           <Route path="/work" component={Work}></Route>
           <Route path="/experience" component={Experience}></Route>

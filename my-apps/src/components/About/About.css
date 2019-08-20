@@ -4,6 +4,8 @@
     left: 50%;
     transform: translate(-50%,-90%);
     border-radius: 50px;
+    width: 30%;
+    height: 35%;
 }
 .about .git{
     position: absolute;
@@ -65,23 +67,33 @@
 }
 @media screen and (max-width: 500px){
     .about .gif{
-        width: 50%;
+        width: 200px;
+        height: 160px;
+        border-radius: 30px;
     }
     .about .git{
         top: 45%;
         left: 5%;
+        width: 50px;
+        height: 50px;
     }
     .about .wechat{
         top: 60%;
         left: 25%;
+        width: 50px;
+        height: 50px;
     }
     .about .qq{
         top: 60%;
         left: 65%;
         /* transform: translate(-50%,0); */
+        width: 50px;
+        height: 50px;
     }
     .about .csdn{
         top: 45%;
         left: 87%;
+        width: 50px;
+        height: 50px;
     }
 }

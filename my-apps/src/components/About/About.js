@@ -27,7 +27,7 @@ export default class About extends Component {
 
         return ( 
             <div className="about">
-                <img src="https://s2.ax1x.com/2019/05/14/Eotgxg.gif" className="gif" alt=""/>
+                <img src="https://s2.ax1x.com/2019/08/20/mJUS58.gif" className="gif" alt=""/>
                 <a href="https://github.com/FelixHsp" target="_blank"><img src="https://s2.ax1x.com/2019/05/14/EoNJwn.png" className="git" alt=""/></a>
                 <img src={this.state.wechat} className="wechat" alt="" onClick={this.cwechate}/>
                 <img src={this.state.qq} className="qq" alt="" onClick={this.cqq}/>

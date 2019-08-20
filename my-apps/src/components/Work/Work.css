@@ -205,7 +205,7 @@ not supported by any browser */
   .block1{
     position:absolute;
     color: white;
-    background: #FF9900;
+    background: steelblue;
     width: 150px;
     height: 30px;
     line-height: 30px;
