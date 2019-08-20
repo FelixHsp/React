@@ -299,7 +299,7 @@ export default class Experience extends Component {
                     <div className="content">
                         <div className="content-title">
                             <text>></text>
-                            担任项目负责人,负责UI设计、部分前端页面、整体后端与数据库。（2019微信高校小程序大赛 东北赛区第二 晋级全国总决赛）
+                            担任项目负责人,负责UI设计、部分前端页面、整体后端与数据库。（2019微信高校小程序大赛 全国二等奖）
                         </div>
                         <div className="content-con">
                             名字灵感：我们以“花”代表当代大学生对未来美好生活的向往，以“习”代表艰苦学习的精神。“花由习生”寓意着：美好的未来生活，只能通过现在的艰苦学习和努力奋斗来换得。
@@ -344,7 +344,7 @@ export default class Experience extends Component {
                     <div className="del" onClick={() => { this.delt(5) }}>
                     </div>
                 </div>
-
+                
                 <div className="pengpeng" onClick={() => { this.open(6) }}>
                     <img src="https://s2.ax1x.com/2019/05/13/E5BLkR.png" alt="" />
                     <p>砰砰记账</p>
