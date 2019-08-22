@@ -102,7 +102,7 @@
 .modall1{
     width: 320px;
     height: 240px;
-    background: #ff713c;
+    background: #ffdd00;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -117,7 +117,7 @@
 .modall1del{
     width: 320px;
     height: 240px;
-    background: #ff713c;
+    background: #ffdd00;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -131,17 +131,17 @@
     opacity: 0;
 }
 .modall1 .xie,.modall1del .xie{
-    color: #eee;
+    color: black;
     /* background: #99CC99; */
     font-size: 35px;
-    width: 105px;
+    /* width: 105px; */
     position: relative;
-    left: 50%;
+    text-align: center;
     top: 50%;
-    transform: translate(-50%,-150%);
+    transform: translate(0,-150%);
 }
 .modall1 .zan,.modall1del .zan{
-    color: white;
+    color: black;
     background: steelblue;
     font-size: 18px;
     border-radius: 20px;
@@ -150,9 +150,10 @@
     line-height: 40px;
     text-align: center;
     position: relative;
+    text-align: center;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-100%);
+    transform: translate(-50%,-100%); 
     border: 1px solid black;
 }
 @keyframes zan{

@@ -316,7 +316,7 @@ export default class Home extends Component {
                 </div>
                 <div className={this.state.modall1}>
                     <div className="xie">
-                        谢谢！
+                        Thanks!
                     </div>
                     <div className="zan">
                         当前获赞次数 {this.state.zan}
