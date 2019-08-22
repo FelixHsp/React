@@ -193,29 +193,29 @@ export default class Experience extends Component {
                         <div className="content-con">
                             (3)使用微信小程序，将树莓派获取到的实时视频在小程序端展示，人工远程操作小车移动。
                         </div>
-                        <img src="https://i.loli.net/2019/07/06/5d203e0a1516c27087.jpg" className="imc "></img>
+                        <img src="https://s2.ax1x.com/2019/08/22/mwYktI.jpg" className="imc "></img>
                         <div className="content-con">
                             Arduino控制小车电机
                         </div>
-                        <img src="https://i.loli.net/2019/07/06/5d203b7eb853054214.png" className="imc" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/08/22/mwYZ1f.png" className="imc" alt=""/>
                         <div className="content-con">
                             搭载tensorflow的树莓派实现人脸识别
                         </div>
-                        <img src="https://i.loli.net/2019/07/06/5d203b7eddbcd79081.png" className="imc" alt=""/>
-                        <img src="https://i.loli.net/2019/07/06/5d203b7ef2f9412957.png" className="imc" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/08/22/mwYP7d.png" className="imc" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/08/22/mwYAht.png" className="imc" alt=""/>
                         <div className="content-con">
                             华为云iot平台开发
                         </div>
-                        <img src="https://i.loli.net/2019/07/06/5d203b7e7be8b79536.png" className="imc" alt=""/>
-                        <img src="https://i.loli.net/2019/07/06/5d203b7e8476c91433.png" className="imc" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/08/22/mwYV9P.png" className="imc" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/08/22/mwYec8.png" className="imc" alt=""/>
                         <div className="content-con">
                             对接华云云iot平台的北向API开发（PHP）
                         </div>
-                        <img src="https://i.loli.net/2019/07/06/5d203b7ea9ba839733.png" className="imc" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/08/22/mwYmjS.png" className="imc" alt=""/>
                         <div className="content-con">
                             智慧园区小程序（环境数据查看，遥控巡视车）
                         </div>
-                        <img src="https://i.loli.net/2019/07/06/5d203b7e9517290232.png" className="imc" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/08/22/mwYung.png" className="imc" alt=""/>
                         <div className="content-con">
                             预览视频地址：
                         </div>
