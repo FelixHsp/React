@@ -486,13 +486,14 @@ li{
         transform: translate(-50%,0);
     }
     .Foot{
-        width: 95%;
+        /* width: 95%;
         height: 50px;
         position: absolute;
         bottom: 15%;
         left: 50%;
         transform: translate(-50%,0);
-        /* background-color: red; */
+        background-color: red; */
+        display: none;
     }
     .Foot div{
         float: left;

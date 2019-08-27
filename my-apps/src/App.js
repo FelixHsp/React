@@ -110,7 +110,7 @@ class App extends Component {
     //   })
     // },2000)
     //图片预加载
-    var imgs = ['https://s2.ax1x.com/2019/05/14/EoaE5t.png','https://s2.ax1x.com/2019/05/14/EoUD9f.png','https://s2.ax1x.com/2019/05/14/EoUD9f.png','https://i.loli.net/2019/05/15/5cdbb3df2213d52243.jpg','https://s2.ax1x.com/2019/05/14/EoaE5t.png','https://i.loli.net/2019/05/15/5cdbb3df22a0387743.jpg'
+    var imgs = ['https://s2.ax1x.com/2019/08/20/mJtsld.gif','https://s2.ax1x.com/2019/05/14/EoaE5t.png','https://s2.ax1x.com/2019/05/14/EoUD9f.png','https://s2.ax1x.com/2019/05/14/EoUD9f.png','https://i.loli.net/2019/05/15/5cdbb3df2213d52243.jpg','https://s2.ax1x.com/2019/05/14/EoaE5t.png','https://i.loli.net/2019/05/15/5cdbb3df22a0387743.jpg'
   ,'https://s2.ax1x.com/2019/08/20/mJUS58.gif','https://s2.ax1x.com/2019/05/14/EoNJwn.png','https://s2.ax1x.com/2019/05/14/Eoa1Vs.png','https://s2.ax1x.com/2019/05/13/E5Jz6A.png','https://s2.ax1x.com/2019/05/13/E5hLAf.jpg','https://s2.ax1x.com/2019/05/13/E5hX4S.jpg','https://s2.ax1x.com/2019/05/13/E5hHBt.jpg',
 'https://s2.ax1x.com/2019/05/13/E5hON8.jpg','https://s2.ax1x.com/2019/05/13/E5hojA.png','https://s2.ax1x.com/2019/05/13/E5h7nI.png','https://s2.ax1x.com/2019/05/13/E5hbHP.png','https://s2.ax1x.com/2019/05/13/E5Uqud.png','https://s2.ax1x.com/2019/05/14/EISFyt.jpg','https://s2.ax1x.com/2019/05/14/EISZTS.jpg','https://s2.ax1x.com/2019/05/14/EISmFg.png',
 'https://s2.ax1x.com/2019/05/14/EISMSs.jpg','https://s2.ax1x.com/2019/05/14/EISuWj.jpg','https://s2.ax1x.com/2019/05/14/EIS1O0.png','https://s2.ax1x.com/2019/05/14/EISlyq.png','https://s2.ax1x.com/2019/05/13/E5w0AI.png','https://s2.ax1x.com/2019/05/14/EISBOx.jpg','https://s2.ax1x.com/2019/05/14/EISrm6.jpg','https://s2.ax1x.com/2019/05/14/EISs0K.jpg',
@@ -134,9 +134,11 @@ class App extends Component {
         // console.log(i);
         // console.log(this.state.per)
         if((num / len) == 1){
-          this.setState({
-            beginn:'beginn1'
-          })
+          setTimeout(() => {
+            this.setState({
+              beginn:'beginn1'
+            })
+          },1500)
           setInterval(() => {
             axios({
               method: "get",
