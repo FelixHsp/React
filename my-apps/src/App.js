@@ -142,7 +142,7 @@ class App extends Component {
           setInterval(() => {
             axios({
               method: "get",
-              url: "http://quan.suning.com/getSysTime.do"
+              url: "https://quan.suning.com/getSysTime.do"
             }).then(res => {
               // console.log(JSON.stringify(res.data.sysTime2));
               this.setState({

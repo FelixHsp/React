@@ -27,7 +27,7 @@ export default class Home extends Component {
     componentDidMount() {
         axios({
             method: 'get',
-            url: 'http://106.15.188.71/felixblog/Message/getzan'
+            url: 'https://www.felixlg.work/felixblog/Message/getzan'
         }).then((res) => {
             // console.log(res.data.data[0].z_value)
             this.setState({
@@ -55,7 +55,7 @@ export default class Home extends Component {
         })
         setTimeout(() => {
             axios({
-                url: 'http://106.15.188.71/felixblog/Message/seuser',
+                url: 'https://www.felixlg.work/felixblog/Message/seuser',
                 method: 'post',
                 data: this.state,
                 transformRequest: function (obj) {
@@ -87,7 +87,7 @@ export default class Home extends Component {
         if (name == 3) {
             // console.log(this.state)
             axios({
-                url: 'http://106.15.188.71/felixblog/Message/seuser',
+                url: 'https://www.felixlg.work/felixblog/Message/seuser',
                 method: 'post',
                 data: this.state,
                 transformRequest: function (obj) {
@@ -125,10 +125,10 @@ export default class Home extends Component {
                     modall2: "modaldell"
                 })
             } else {
-                console.log(2)
+                //console.log(2)
                 axios({
                     method: 'get',
-                    url: 'http://106.15.188.71/felixblog/Message/getmes'
+                    url: 'https://www.felixlg.work/felixblog/Message/getmes'
                 }).then((res) => {
                     var lis=[];
                     var lis2=[];
@@ -136,7 +136,7 @@ export default class Home extends Component {
                     for(var i=0;i<10;i++){
                         lis[i]=lis2[i]
                     }
-                    console.log(lis)
+                    //console.log(lis)
                     this.setState({
                         list:lis
                     })
@@ -157,7 +157,7 @@ export default class Home extends Component {
             }, 1500)
             setTimeout(() => {
                 axios({
-                    url: 'http://106.15.188.71/felixblog/Message/addzan',
+                    url: 'https://www.felixlg.work/felixblog/Message/addzan',
                     method: 'post',
                     data: this.state,
                     transformRequest: function (obj) {
@@ -168,7 +168,7 @@ export default class Home extends Component {
                         return str.join('&')
                     }
                 }).then(res => {
-                    console.log(res)
+                    //console.log(res)
                 })
             },
                 2000)
@@ -183,9 +183,9 @@ export default class Home extends Component {
         // console.log(this.refs.inp.value)
         var adduser = this.state
         adduser.username = this.refs.inp.value
-        console.log(adduser)
+        //console.log(adduser)
         axios({
-            url: 'http://106.15.188.71/felixblog/Message/sename',
+            url: 'https://www.felixlg.work/felixblog/Message/sename',
             method: 'post',
             data: adduser,
             transformRequest: function (obj) {
@@ -196,7 +196,7 @@ export default class Home extends Component {
                 return str.join('&')
             }
         }).then(res => {
-            console.log(res)
+            //console.log(res)
             if (res.data.data[0]) {
                 this.setState({
                     tag2: false
@@ -210,7 +210,7 @@ export default class Home extends Component {
         setTimeout(() => {
             if (this.state.tag2 == true) {
                 axios({
-                    url: 'http://106.15.188.71/felixblog/Message/adduser',
+                    url: 'https://www.felixlg.work/felixblog/Message/adduser',
                     method: 'post',
                     data: adduser,
                     transformRequest: function (obj) {
@@ -221,12 +221,12 @@ export default class Home extends Component {
                         return str.join('&')
                     }
                 }).then(res => {
-                    alert('登陆成功')
+                    alert('登录成功')
                     this.setState({
                         modall3: "modaldell",
                         name: adduser.username
                     })
-                    console.log(res)
+                    //console.log(res)
                 }).catch(err => {
                     console.log(err)
                 })
@@ -236,55 +236,59 @@ export default class Home extends Component {
         }, 2000)
     }
     bindTap2() {
-        console.log(this.refs.inp2.value)
+        //console.log(this.refs.inp2.value)
         var addmessage = this.state
         addmessage.message = this.refs.inp2.value
-        console.log(addmessage)
+        //console.log(addmessage)
         this.refs.inp2.value=""
-        setTimeout(()=>{
-            axios({
-                url: 'http://106.15.188.71/felixblog/Message/addmes',
-                method: 'post',
-                data: addmessage,
-                transformRequest: function (obj) {
-                    var str = []
-                    for (var p in obj) {
-                        str.push(encodeURIComponent(p) + '=' + encodeURIComponent(obj[p]))
-                    }
-                    return str.join('&')
-                }
-            }).then(res => {
-                console.log(res)
+        if(addmessage.message==""){
+            alert('留言为空，请输入留言。')
+        }else{
+            setTimeout(()=>{
                 axios({
-                    method: 'get',
-                    url: 'http://106.15.188.71/felixblog/Message/getmes'
-                }).then((res) => {
-                    var lis=[];
-                    var lis2=[];
-                    lis2=res.data.data.reverse()
-                    for(var i=0;i<10;i++){
-                        lis[i]=lis2[i]
+                    url: 'https://www.felixlg.work/felixblog/Message/addmes',
+                    method: 'post',
+                    data: addmessage,
+                    transformRequest: function (obj) {
+                        var str = []
+                        for (var p in obj) {
+                            str.push(encodeURIComponent(p) + '=' + encodeURIComponent(obj[p]))
+                        }
+                        return str.join('&')
                     }
-                    this.setState({
-                        list:lis
+                }).then(res => {
+                    //console.log(res)
+                    axios({
+                        method: 'get',
+                        url: 'https://www.felixlg.work/felixblog/Message/getmes'
+                    }).then((res) => {
+                        var lis=[];
+                        var lis2=[];
+                        lis2=res.data.data.reverse()
+                        for(var i=0;i<10;i++){
+                            lis[i]=lis2[i]
+                        }
+                        this.setState({
+                            list:lis
+                        })
+                        alert('添加成功')
+                        // console.log(this.state.list)
                     })
-                    alert('添加成功')
-                    console.log(this.state.list)
                 })
-            })
-        },100)
+            },100)
+        }
     }
     bindTap3(){
-        console.log(this.state.list.length)
+        // console.log(this.state.list.length)
         axios({
             method: 'get',
-            url: 'http://106.15.188.71/felixblog/Message/getmes'
+            url: 'https://www.felixlg.work/felixblog/Message/getmes'
         }).then((res) => {
             var lis=[];
             var lis2=[];
             var tap;
             lis2=res.data.data.reverse()
-            console.log(res.data.data.length)
+            // console.log(res.data.data.length)
             if(this.state.list.length*1+10<res.data.data.length){
                 for(var i=0;i<this.state.list.length*1+10;i++){
                     lis[i]=lis2[i]
@@ -297,7 +301,7 @@ export default class Home extends Component {
                     alert('暂无更多')
                 }
             }
-            console.log(lis)
+            // console.log(lis)
             this.setState({
                 list:lis
             })
