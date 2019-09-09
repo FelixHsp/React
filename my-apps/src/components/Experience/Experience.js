@@ -11,7 +11,8 @@ export default class Experience extends Component {
             modal5: "modaldel",
             modal6: "modaldel",
             modal7: "modaldel",
-            modal8:"modaldel"
+            modal8:"modaldel",
+            modal9:"modaldel"
         }
         this.delt = this.delt.bind(this)
         this.open = this.open.bind(this)
@@ -45,6 +46,7 @@ export default class Experience extends Component {
             modal6: "modaldel",
             modal7: "modaldel",
             modal8:"modaldel",
+            modal9:"modaldel",
             ['modal' + name]: ["modal" + name]
         })
     }
@@ -284,6 +286,70 @@ export default class Experience extends Component {
                     </div>
                 </div>
 
+                <div className="chicken" onClick={() => { this.open(9) }}>
+                    <img src="https://s2.ax1x.com/2019/09/09/nYKYRS.png" alt="" />
+                    <div className="xing">*</div>
+                    <p>家鸡种类识别</p>
+                </div>
+                <div className={this.state.modal9}>
+                    <div className="title">
+                    家鸡种类识别系统
+                    </div>
+                    <div className="content">
+                    <div className="content-title">
+                            <text>></text>
+                            基于Keras与Django的家鸡种类识别系统
+                        </div>
+                        <div className="content-con">
+                            项目简介：</div>
+                        <div className="content-con">
+                            使用Keras神经网络，将白羽鸡、林甸鸡、青脚麻鸡三种家鸡各二百张数据集进行分类，迭代拟合后生成权重文件。利用Django框架搭建web服务，并引用权重文件，实现上传图片识别结果的功能。
+                        </div>
+                        <div className="content-con">识别系统</div>
+                        <img src="https://s2.ax1x.com/2019/09/09/nYlase.png" className="imc "></img>
+                        <div className="content-con">选择照片</div>
+                        <img src="https://s2.ax1x.com/2019/09/09/nYlDII.png" className="imc" alt=""/>
+                        <div className="content-con">识别结果</div>
+                        <img src="https://s2.ax1x.com/2019/09/09/nYlBdA.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            Keras对训练集预处理
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/09/09/nYl0Zd.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            对训练集进行迭代分类
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/09/09/nYldqH.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            识别上传的照片
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/09/09/nYlsit.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            与Django框架结合
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/09/09/nYl6Rf.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            连接mysql获取家鸡信息
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/09/09/nYlcz8.png" className="imc" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/09/09/nYl2QS.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            Keras代码GitHub：
+                        </div>
+                        <div className="yulan">
+                            <a href="https://github.com/FelixHsp/chickenRecognition" target="_blank" className="go">https://github.com/FelixHsp/chickenRecognition</a>
+                        </div>
+                        <div className="content-con">
+                            Django代码GitHub：
+                        </div>
+                        <div className="yulan">
+                            <a href="https://github.com/FelixHsp/chickenRecognitionClient" target="_blank" className="go">https://github.com/FelixHsp/chickenRecognitionClient</a>
+                        </div>
+                    </div>
+                    <div className="bot">
+                    </div>
+                    <div className="del" onClick={() => { this.delt(9) }}>
+                    </div>
+                </div>
 
                 <div className="mr" onClick={() => { this.open(4) }}>
                     <img src="https://s2.ax1x.com/2019/05/13/E50XQS.png" alt="" />
