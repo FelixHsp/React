@@ -30,7 +30,14 @@ class App extends Component {
         per:0
     }
     this.click = this.click.bind(this)
+    this.tishibtn = this.tishibtn.bind(this)
 }
+  tishibtn(){
+    // console.log(1111)
+    this.setState({
+      beginn:'beginn1'
+    })
+  }
   click(name){
     this.setState({
       Link1:'other',
@@ -184,6 +191,8 @@ class App extends Component {
           <div className={this.state.beginn}>
             <img src="https://s2.ax1x.com/2019/08/20/mJtsld.gif"  alt=""/>
             <div className="percentile">{this.state.per}</div>
+            <div className="tishi"> 如果长时间未加载成功，请点击上方按钮直接进入。</div>
+            <div className="tishibtn" onClick={()=>{this.tishibtn()}}>点击进入</div>
           </div>
           <Route path="/work" component={Work}></Route>
           <Route path="/experience" component={Experience}></Route>

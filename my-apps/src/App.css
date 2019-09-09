@@ -17,6 +17,35 @@
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace
 }
+.tishi{
+    color: #999;
+    font-size: 12px;
+    /* width: 200px; */
+    height: 200px;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-align: center;
+    z-index: 10000;
+}
+.tishibtn{
+    color: black;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+    /* height: 200px; */
+    cursor: pointer;
+    border: 1px solid black;
+    background: #6495ED;
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-align: center;
+    z-index: 10000;
+}
 @keyframes myfirst
 {
 0%   {background:#6495ED; height: 0%;}
