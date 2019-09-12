@@ -17,7 +17,8 @@ export default class Home extends Component {
             tag2: "",
             zan: "",
             list:[],
-            message:""
+            message:"",
+            tishi:"tishiNone"
         }
         this.bindTap = this.bindTap.bind(this)
         this.bindTap2 = this.bindTap2.bind(this)
@@ -34,6 +35,46 @@ export default class Home extends Component {
                 zan: res.data.data[0].z_value
             })
         })
+        var oInput = document.getElementById('inp1')
+        const debounce = (func,wait=500)=>{
+            let timer = 0;
+            return( ...args )=>{
+                if(timer){
+                    clearTimeout(timer)
+                }
+                timer = setTimeout(()=>{
+                    func.call(this,args) //func.apply(this.args)
+                },wait)
+            }
+        }
+        oInput.addEventListener('input',debounce(()=>{
+            var adduser = this.state
+            adduser.username = this.refs.inp.value
+            axios({
+                url:'http://106.15.188.71/felixblog/Message/sename',
+                method:'post',
+                data:adduser,
+                transformRequest: function (obj) {
+                    var str = []
+                    for (var p in obj) {
+                        str.push(encodeURIComponent(p) + '=' + encodeURIComponent(obj[p]))
+                    }
+                    return str.join('&')
+                }
+            }).then(res => {
+                if (res.data.data[0]) {
+                    // console.log(111)
+                    this.setState({
+                        tishi:"tishiUser"
+                    })
+                }
+            }).catch(err =>{
+                // console.log(222)
+                this.setState({
+                    tishi:"tishiNone"
+                })
+            })
+        }))
         window.alert = function (name) {
             var iframe = document.createElement("IFRAME");
             iframe.style.display = "none";
@@ -366,8 +407,9 @@ export default class Home extends Component {
                             <div className={this.state.con}>
                                 <img src="https://i.loli.net/2019/05/16/5cdcca126def120476.png" alt="" />
                                 <div className="user">起个名字吧,名字将和你的ip绑定，只能起一次哟。</div>
-                                <input type="text" ref="inp" />
+                                <input type="text" ref="inp" id="inp1"/>
                                 <div onClick={this.bindTap} className="butt">确定</div>
+                                <div className={this.state.tishi}>该用户名已存在</div>
                             </div>
                             <div className={this.state.con1}>
                                 <img src="https://i.loli.net/2019/05/16/5cdcca126def120476.png" alt="" />

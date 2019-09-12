@@ -211,6 +211,19 @@
     transform: translate(0,-100%);
     left:250px;
 }
+.modall3 .tishiUser{
+    position: relative;
+    top: 160px;
+    color: red;
+    font-size: 12px;
+    left: 80px;
+    width: 100px;
+    transform: translate(0,-100%);
+}
+.modall3 .tishiNone{
+    display: none;
+    opacity: 0;
+}
 .modall3 .use,.modall3 .city{
     font-size: 20px;
     height: 35px;
