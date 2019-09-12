@@ -333,6 +333,12 @@ export default class Experience extends Component {
                         <img src="https://s2.ax1x.com/2019/09/09/nYlcz8.png" className="imc" alt=""/>
                         <img src="https://s2.ax1x.com/2019/09/09/nYl2QS.png" className="imc" alt=""/>
                         <div className="content-con">
+                            项目地址：
+                        </div>
+                        <div className="yulan">
+                            <a href="http://123.207.216.106/chicken/index" target="_blank" className="go">http://123.207.216.106/chicken/index</a>
+                        </div>
+                        <div className="content-con">
                             Keras代码GitHub：
                         </div>
                         <div className="yulan">
