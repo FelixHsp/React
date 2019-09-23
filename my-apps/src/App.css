@@ -256,11 +256,11 @@ a {
 }
 @keyframes change
 {
-0%   {background: #708090; width:  0%;margin-left:0}
-25%  {background: #708090;width: 50%;margin-left:0}
-50%  {background: #708090;width: 100%;margin-left:0}
-75%  {background: #708090;margin-left: 50%;width: 50%;}
-100% {background: #708090;margin-left: 100%;width: 0;}
+0%   {background: #4682B4; width:  0%;margin-left:0}
+25%  {background: #4682B4;width: 50%;margin-left:0}
+50%  {background: #4682B4;width: 100%;margin-left:0}
+75%  {background: #4682B4;margin-left: 50%;width: 50%;}
+100% {background: #4682B4;margin-left: 100%;width: 0;}
 }
 .beginn{
     position: absolute;
@@ -288,15 +288,18 @@ a {
 
 @media screen and (max-width: 500px){
     #root{
-        overflow-x: hidden
+        overflow-x: hidden;
+        overflow-y:100px;
+        height: 100%;
     }
     .Logo{
         display: none;
     }
     .activ{
         /* height: 50%; */
+        /* line-height: 50%; */
         /* width: 10%; */
-        border-radius: 20px;
+        border-radius: 10px;
         background: #6495ED;
         font-size: 12px;
     }
@@ -324,5 +327,9 @@ a {
     }
     .begin1{
         display: none;
+    }
+    .beginn img{
+        width:200px ;
+        height: 200px;
     }
 }
