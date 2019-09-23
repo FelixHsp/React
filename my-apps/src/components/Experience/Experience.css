@@ -56,6 +56,20 @@ body{
     margin-top: 4%;
     margin-left: 57%;
 }
+.code-write{
+    width: 100px;
+    height: 40px;
+    background: #FF7F50;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 15px;
+    border:1.5px solid black;
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 57%;
+}
 .lvshi{
     width: 80px;
     height: 80px;
@@ -77,7 +91,8 @@ body{
     border-radius: 25px;
     background: #ff6b6a;
 }
-.lvshi img:hover,.gg img:hover,.nine img:hover,.mr img:hover,.flower img:hover,.pengpeng img:hover,.iotcar img:hover,.music img:hover,.chicken img:hover{
+.lvshi img:hover,.gg img:hover,.nine img:hover,.mr img:hover,.flower img:hover,.pengpeng img:hover,.iotcar img:hover,.music img:hover,.chicken img:hover,
+.vue img:hover,.react img:hover,.promise img:hover{
     animation:ho 0.5s linear;
 }
 @keyframes ho{
@@ -646,6 +661,291 @@ body{
     cursor: pointer;
 }
 
+.vue{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    /* background: #999; */
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 60%;
+    transform: translate(0,-100%);
+}
+.vue img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background: wheat;
+}
+.modal10{
+    width: 50%;
+    /* height: 50%; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-48%);
+    /* display: none; */
+    animation: openit 1s linear;
+    z-index: 1;
+}
+.modal10 .title{
+    background-color: #20B2AA;
+    color: white;
+    height: 35px;
+    border-radius: 15px 15px 0 0;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 35px;
+}
+.modal10 .content{
+    /* width:998px;  */
+    width: 99.8%;
+    /* height:1%; */
+    height: 500px;
+    overflow-y:auto;
+    /* overflow-x:auto;  */
+    background-color: white;
+    color: #999;
+    border: 1px solid black;
+    border-top: 0;
+    border-bottom: 0;
+}
+.modal10 .content::-webkit-scrollbar
+{
+    width: 5px;
+    /* height: 10px; */
+    background-color: white;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.modal10 .content::-webkit-scrollbar-track
+{
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+    border-radius: 10px;
+    background-color: white;
+}
+/*定义滑块 内阴影+圆角*/
+.modal10 .content::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    /* width: 1px; */
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+    background-color: #ccc;
+}
+.modal10 .bot{
+    width: 99.8%;
+    height: 15px;
+    margin-top: -2px;
+    background-color: white;
+    border-radius:0 0 15px 15px;
+    border: 1px solid black;
+    border-top: 0;
+}
+.modal10 .del{
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    background-color: #FF6666;
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.react{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    /* background: #999; */
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 75%;
+    transform: translate(0,-100%);
+}
+.react img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 25px;
+    /* background: wheat; */
+}
+.modal11{
+    width: 50%;
+    /* height: 50%; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-48%);
+    /* display: none; */
+    animation: openit 1s linear;
+    z-index: 1;
+}
+.modal11 .title{
+    background-color: #20B2AA;
+    color: white;
+    height: 35px;
+    border-radius: 15px 15px 0 0;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 35px;
+}
+.modal11 .content{
+    /* width:998px;  */
+    width: 99.8%;
+    /* height:1%; */
+    height: 500px;
+    overflow-y:auto;
+    /* overflow-x:auto;  */
+    background-color: white;
+    color: #999;
+    border: 1px solid black;
+    border-top: 0;
+    border-bottom: 0;
+}
+.modal11 .content::-webkit-scrollbar
+{
+    width: 5px;
+    /* height: 10px; */
+    background-color: white;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.modal11 .content::-webkit-scrollbar-track
+{
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+    border-radius: 10px;
+    background-color: white;
+}
+/*定义滑块 内阴影+圆角*/
+.modal11 .content::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    /* width: 1px; */
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+    background-color: #ccc;
+}
+.modal11 .bot{
+    width: 99.8%;
+    height: 15px;
+    margin-top: -2px;
+    background-color: white;
+    border-radius:0 0 15px 15px;
+    border: 1px solid black;
+    border-top: 0;
+}
+.modal11 .del{
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    background-color: #FF6666;
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.promise{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    /* background: #999; */
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 90%;
+    transform: translate(0,-100%);
+}
+.promise img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 25px;
+    /* background: wheat; */
+}
+.modal12{
+    width: 50%;
+    /* height: 50%; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-48%);
+    /* display: none; */
+    animation: openit 1s linear;
+    z-index: 1;
+}
+.modal12 .title{
+    background-color: #20B2AA;
+    color: white;
+    height: 35px;
+    border-radius: 15px 15px 0 0;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 35px;
+}
+.modal12 .content{
+    /* width:998px;  */
+    width: 99.8%;
+    /* height:1%; */
+    height: 500px;
+    overflow-y:auto;
+    /* overflow-x:auto;  */
+    background-color: white;
+    color: #999;
+    border: 1px solid black;
+    border-top: 0;
+    border-bottom: 0;
+}
+.modal12 .content::-webkit-scrollbar
+{
+    width: 5px;
+    /* height: 10px; */
+    background-color: white;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.modal12 .content::-webkit-scrollbar-track
+{
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+    border-radius: 10px;
+    background-color: white;
+}
+/*定义滑块 内阴影+圆角*/
+.modal12 .content::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    /* width: 1px; */
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+    background-color: #ccc;
+}
+.modal12 .bot{
+    width: 99.8%;
+    height: 15px;
+    margin-top: -2px;
+    background-color: white;
+    border-radius:0 0 15px 15px;
+    border: 1px solid black;
+    border-top: 0;
+}
+.modal12 .del{
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    background-color: #FF6666;
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    cursor: pointer;
+}
+
 .mr{
     width: 80px;
     height: 80px;
@@ -1040,10 +1340,22 @@ body{
         width: 40px;
         height: 40px;
     }
+    .vue img{
+        width: 40px;
+        height: 40px;
+    }
+    .react img{
+        width: 40px;
+        height: 40px;
+    }
+    .promise img{
+        width: 40px;
+        height: 40px;
+    }
     .modal1{
         width: 90%;
         /* height: 50%; */
-        position: absolute;
+        position: fixed;
         left: 50%;
         top: 50%;
         transform: translate(-50%,-48%);
@@ -1068,7 +1380,7 @@ body{
     .modal2{
         width: 90%;
         /* height: 50%; */
-        position: absolute;
+        position: fixed;
         left: 50%;
         top: 50%;
         transform: translate(-50%,-48%);
@@ -1093,7 +1405,7 @@ body{
         width: 90%;
         /* height: 50%; */
         /* overflow-x: hidden; */
-        position: absolute;
+        position: fixed;
         left: 50%;
         top: 50%;
         transform: translate(-50%,-48%);
@@ -1122,6 +1434,20 @@ body{
         margin-top: 10%;
         margin-left: 10%;
     }
+    .code-write{
+        width: 80px;
+        height: 30px;
+        /* background: #E9967A; */
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        font-size: 14px;
+        border-radius: 10px;
+        border:1.5px solid black;
+        position: absolute;
+        margin-top: 105%;
+        margin-left: 10%;
+    }
     .mr{
         width: 80px;
         height: 80px;
@@ -1138,7 +1464,7 @@ body{
     .modal4{
         width: 90%;
         /* height: 50%; */
-        position: absolute;
+        position: fixed;
         left: 50%;
         top: 50%;
         transform: translate(-50%,-48%);
@@ -1162,7 +1488,7 @@ body{
     .modal5{
         width: 90%;
         /* height: 50%; */
-        position: absolute;
+        position: fixed;
         left: 50%;
         top: 50%;
         transform: translate(-50%,-48%);
@@ -1186,7 +1512,7 @@ body{
     .modal6{
         width: 90%;
         /* height: 50%; */
-        position: absolute;
+        position: fixed;
         left: 50%;
         top: 50%;
         transform: translate(-50%,-48%);
@@ -1194,6 +1520,80 @@ body{
         animation: openit 1s linear;
         z-index: 1;
     }
+
+    .vue{
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        /* background: #999; */
+        font-size: 12px;
+        text-align: center;
+        color: black;
+        font-weight: 600;
+        margin-top: 105%;
+        margin-left: 8%;
+        transform: translate(0,-100%);
+    }
+    .modal10{
+        width: 90%;
+        /* height: 50%; */
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-48%);
+        /* display: none; */
+        animation: openit 1s linear;
+        z-index: 1;
+    }
+    .react{
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        /* background: #999; */
+        font-size: 12px;
+        text-align: center;
+        color: black;
+        font-weight: 600;
+        margin-top: 105%;
+        margin-left: 43%;
+        transform: translate(0,-100%);
+    }
+    .modal11{
+        width: 90%;
+        /* height: 50%; */
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-48%);
+        /* display: none; */
+        animation: openit 1s linear;
+        z-index: 1;
+    }
+    .promise{
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        /* background: #999; */
+        font-size: 12px;
+        text-align: center;
+        color: black;
+        font-weight: 600;
+        margin-top: 105%;
+        margin-left: 75%;
+        transform: translate(0,-100%);
+    }
+    .modal12{
+        width: 90%;
+        /* height: 50%; */
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-48%);
+        /* display: none; */
+        animation: openit 1s linear;
+        z-index: 1;
+    }
+
     .go{
         margin-left: 0;
         margin-left: 5%;
@@ -1219,7 +1619,7 @@ body{
     .modal7{
         width: 90%;
         /* height: 50%; */
-        position: absolute;
+        position: fixed;
         left: 50%;
         top: 50%;
         transform: translate(-50%,-48%);
@@ -1243,7 +1643,7 @@ body{
     .modal8{
         width: 90%;
         /* height: 50%; */
-        position: absolute;
+        position: fixed;
         left: 50%;
         top: 50%;
         transform: translate(-50%,-48%);
@@ -1267,7 +1667,7 @@ body{
     .modal9{
         width: 90%;
         /* height: 50%; */
-        position: absolute;
+        position: fixed;
         left: 50%;
         top: 50%;
         transform: translate(-50%,-48%);

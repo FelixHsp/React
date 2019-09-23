@@ -12,7 +12,10 @@ export default class Experience extends Component {
             modal6: "modaldel",
             modal7: "modaldel",
             modal8:"modaldel",
-            modal9:"modaldel"
+            modal9:"modaldel",
+            modal10:"modaldel",
+            modal11:"modaldel",
+            modal12:"modaldel",
         }
         this.delt = this.delt.bind(this)
         this.open = this.open.bind(this)
@@ -47,6 +50,9 @@ export default class Experience extends Component {
             modal7: "modaldel",
             modal8:"modaldel",
             modal9:"modaldel",
+            modal10:"modaldel",
+            modal11:"modaldel",
+            modal12:"modaldel",
             ['modal' + name]: ["modal" + name]
         })
     }
@@ -68,6 +74,9 @@ export default class Experience extends Component {
                 </div>
                 <div className="experience-back">
                     全栈项目
+                </div>
+                <div className="code-write">
+                    手写源码
                 </div>
                 <div className={this.state.modal1}>
                     <div className="title">
@@ -354,6 +363,126 @@ export default class Experience extends Component {
                     <div className="bot">
                     </div>
                     <div className="del" onClick={() => { this.delt(9) }}>
+                    </div>
+                </div>
+
+                <div className="vue" onClick={() => { this.open(10) }}>
+                    <img src="https://s2.ax1x.com/2019/09/23/uFSFGn.png" alt="" />
+                    <div className="xing">*</div>
+                    <p>手写Vue核心代码</p>
+                </div>
+                <div className={this.state.modal10}>
+                    <div className="title">
+                    原生Js实现Vue核心功能
+                    </div>
+                    <div className="content">
+                    <div className="content-title">
+                            <text>></text>
+                            原生Js实现Vue核心功能
+                        </div>
+                        <div className="content-con">
+                            使用原生Js实现插值绑定，双向绑定，数据更新，点击事件等Vue核心功能。
+                        </div>
+                        <div className="content-con">fvue类构造函数</div>
+                        <img src="https://s2.ax1x.com/2019/09/23/uFF4W4.png" className="imc "></img>
+                        <div className="content-con">编译解析Compile类构造函数</div>
+                        <img src="https://s2.ax1x.com/2019/09/23/uFFISJ.png" className="imc" alt=""/>
+                        <div className="content-con">测试fvue运行</div>
+                        <img src="https://s2.ax1x.com/2019/09/23/uFFol9.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            测试结果
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/09/23/uFFhYF.png" className="imc" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/09/23/uFFfFU.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            GitHub：
+                        </div>
+                        <div className="yulan">
+                            <a href="https://github.com/FelixHsp/2222/tree/master/%E5%A4%8D%E4%B9%A0/vue" target="_blank" className="go">https://github.com/FelixHsp/2222/tree/master/复习/vue</a>
+                        </div>
+                    </div>
+                    <div className="bot">
+                    </div>
+                    <div className="del" onClick={() => { this.delt(10) }}>
+                    </div>
+                </div>
+
+                <div className="react" onClick={() => { this.open(11) }}>
+                    <img src="https://s2.ax1x.com/2019/09/23/uFiUC4.png" alt="" />
+                    <div className="xing">*</div>
+                    <p>手写React核心代码</p>
+                </div>
+                <div className={this.state.modal11}>
+                    <div className="title">
+                    原生Js实现React核心功能
+                    </div>
+                    <div className="content">
+                    <div className="content-title">
+                            <text>></text>
+                            原生Js实现React核心功能
+                        </div>
+                        <div className="content-con">
+                            使用原生Js实现标签，函数组件，类组件的解析，虚拟dom的渲染，点击事件等React核心功能                        </div>
+                        <div className="content-con">测试代码入口文件</div>
+                        <img src="https://s2.ax1x.com/2019/09/23/uFEud0.png" className="imc "></img>
+                        <div className="content-con">创建虚拟节点</div>
+                        <img src="https://s2.ax1x.com/2019/09/23/uFEnZq.png" className="imc" alt=""/>
+                        <div className="content-con">初始化节点，虚拟dom转化为dom</div>
+                        <img src="https://s2.ax1x.com/2019/09/23/uFEeLn.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            组件分类解析
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/09/23/uFEKoV.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            测试结果
+                        </div>
+                        <img src="https://s2.ax1x.com/2019/09/23/uFEVMj.png" className="imc" alt=""/>
+                        <img src="https://s2.ax1x.com/2019/09/23/uFEQiT.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            GitHub：
+                        </div>
+                        <div className="yulan">
+                            <a href="https://github.com/FelixHsp/2222/tree/master/%E5%A4%8D%E4%B9%A0/react/react1/my-app" target="_blank" className="go">https://github.com/FelixHsp/2222/tree/master/复习/react/react1/my-app</a>
+                        </div>
+                    </div>
+                    <div className="bot">
+                    </div>
+                    <div className="del" onClick={() => { this.delt(11) }}>
+                    </div>
+                </div>
+
+                <div className="promise" onClick={() => { this.open(12) }}>
+                    <img src="https://s2.ax1x.com/2019/09/23/uFiDDx.png" alt="" />
+                    <p>手写Promise</p>
+                </div>
+                <div className={this.state.modal12}>
+                    <div className="title">
+                    原生Js实现promise基本功能
+                    </div>
+                    <div className="content">
+                    <div className="content-title">
+                            <text>></text>
+                            原生Js实现promise基本功能
+                        </div>
+                        <div className="content-con">
+                            使用原生Js实现promise异步处理，实现任务链
+                        </div>
+                        <div className="content-con">测试fpromise代码</div>
+                        <img src="https://s2.ax1x.com/2019/09/23/uFVjHI.png" className="imc "></img>
+                        <div className="content-con">fpromise类构造函数</div>
+                        <img src="https://s2.ax1x.com/2019/09/23/uFVxEt.png" className="imc" alt=""/>
+                        <div className="content-con">测试结果</div>
+                        <img src="https://s2.ax1x.com/2019/09/23/uFVXDA.png" className="imc" alt=""/>
+                        <div className="content-con">
+                            GitHub：
+                        </div>
+                        <div className="yulan">
+                            <a href="https://github.com/FelixHsp/2222/tree/master/%E5%A4%8D%E4%B9%A0/promise" target="_blank" className="go">https://github.com/FelixHsp/2222/tree/master/复习/promise</a>
+                        </div>
+                    </div>
+                    <div className="bot">
+                    </div>
+                    <div className="del" onClick={() => { this.delt(12) }}>
                     </div>
                 </div>
 

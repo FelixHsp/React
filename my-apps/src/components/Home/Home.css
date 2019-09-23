@@ -504,7 +504,7 @@ li{
     }
     .Foot{
         width: 95%;
-        height: 50px;
+        height: 20px;
         position: absolute;
         /* bottom: 15%; */
         left: 50%;
@@ -516,7 +516,7 @@ li{
     }
     .Foot div{
         float: left;
-        line-height: 50px;
+        line-height: 20px;
         width: 100%;
         /* border: 1px solid black; */
         text-align: center;
@@ -537,7 +537,7 @@ li{
         bottom: 0;
         left: 50%;
         transform: translate(-50%,0);
-        font-size: 14px;
+        font-size: 12px;
         color:black;
     }
     .message-wrap{
@@ -551,8 +551,8 @@ li{
     }
     .message-wrap img{
         margin-right: 20%;
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
     .message-wrap img:nth-child(3){
         margin-right: 0;
