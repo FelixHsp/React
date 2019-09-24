@@ -434,7 +434,7 @@ class WordWrapper extends Component {
             <div className="Word-Wrapper">
                 <div>Hey</div>
                 <div>I'm Felix</div>
-                <div>Welcom to here <h className="text">|</h></div>
+                <div>Welcom here <h className="text">|</h></div>
             </div>
         );
     }
