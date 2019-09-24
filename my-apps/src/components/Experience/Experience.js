@@ -302,7 +302,7 @@ export default class Experience extends Component {
                 </div>
                 <div className={this.state.modal9}>
                     <div className="title">
-                    家鸡种类识别系统
+                    家鸡种类识别系统（暂不开源展示）
                     </div>
                     <div className="content">
                     <div className="content-title">
@@ -341,7 +341,7 @@ export default class Experience extends Component {
                         </div>
                         <img src="https://s2.ax1x.com/2019/09/09/nYlcz8.png" className="imc" alt=""/>
                         <img src="https://s2.ax1x.com/2019/09/09/nYl2QS.png" className="imc" alt=""/>
-                        <div className="content-con">
+                        {/* <div className="content-con">
                             项目地址：
                         </div>
                         <div className="yulan">
@@ -358,7 +358,7 @@ export default class Experience extends Component {
                         </div>
                         <div className="yulan">
                             <a href="https://github.com/FelixHsp/chickenRecognitionClient" target="_blank" className="go">https://github.com/FelixHsp/chickenRecognitionClient</a>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="bot">
                     </div>

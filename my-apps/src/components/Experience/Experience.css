@@ -608,6 +608,10 @@ body{
     line-height: 35px;
 }
 .modal9 .content{
+    -webkit-filter: blur(2px); /* Chrome, Opera */
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);    
+    filter: blur(4px);
     /* width:998px;  */
     width: 99.8%;
     /* height:1%; */
