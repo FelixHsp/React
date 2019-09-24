@@ -567,6 +567,19 @@ li{
     .modall3{
         width: 90%;
     }
+    .modall3 input{
+        left: 10%;
+    }
+    .modall3 .butt {
+        position: absolute;
+        left: 65%;
+        top: 308px;
+    }
+    .modall3 .tishiUser{
+        position: absolute;
+        top: 330px;
+        left: 13%;
+    }
     .liuyan{
         width: 85%;
         font-size: 13px;
