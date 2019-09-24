@@ -465,7 +465,7 @@ class Foot extends Component {
                 <div>Your Add = {this.props.city}</div>
                 <div>const School = NEAU</div>
                 <div>const Add = 哈尔滨</div>
-                <div>豫ICP备19017814号-1</div>
+                <div>豫ICP备19017814号-1<br/>www.felixlg.work</div>
             </div>
         )
     }

@@ -174,7 +174,7 @@ class App extends Component {
               <div onClick={()=>{this.click(2)}} className={this.state.Link2}><NavLink to="/work">Technology</NavLink></div>
               <div onClick={()=>{this.click(3)}} className={this.state.Link3}><NavLink to="/experience">Experience</NavLink></div>
               <div onClick={()=>{this.click(4)}} className={this.state.Link4}><NavLink to='/about'>About</NavLink></div>
-              <Time></Time>
+              <div className='Time'>{this.state.date}</div>
             </div>
           </div>
           <div className="clear"></div>
@@ -209,24 +209,5 @@ class App extends Component {
   }
 }
 
-
-class Time extends Component{
-  constructor() {
-    super();
-    this.state = {
-        date: ""
-    };
-  }
-  componentDidMount() {
-      
-  }
-  render(){
-    return(
-      <div className='Time'>
-        {this.state.date}
-      </div>
-    )
-  }
-}
 
 export default App;
