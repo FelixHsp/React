@@ -28,7 +28,7 @@ export default class Home extends Component {
     componentDidMount() {
         axios({
             method: 'get',
-            url: 'http://106.15.188.71/felixblog/Message/getzan'
+            url: 'https://www.felixlg.work/felixblog/Message/getzan'
         }).then((res) => {
             // console.log(res.data.data[0].z_value)
             this.setState({
@@ -51,7 +51,7 @@ export default class Home extends Component {
             var adduser = this.state
             adduser.username = this.refs.inp.value
             axios({
-                url:'http://106.15.188.71/felixblog/Message/sename',
+                url:'https://www.felixlg.work/felixblog/Message/sename',
                 method:'post',
                 data:adduser,
                 transformRequest: function (obj) {
@@ -96,7 +96,7 @@ export default class Home extends Component {
         })
         setTimeout(() => {
             axios({
-                url: 'http://106.15.188.71/felixblog/Message/seuser',
+                url: 'https://www.felixlg.work/felixblog/Message/seuser',
                 method: 'post',
                 data: this.state,
                 transformRequest: function (obj) {
@@ -128,7 +128,7 @@ export default class Home extends Component {
         if (name == 3) {
             // console.log(this.state)
             axios({
-                url: 'http://106.15.188.71/felixblog/Message/seuser',
+                url: 'https://www.felixlg.work/felixblog/Message/seuser',
                 method: 'post',
                 data: this.state,
                 transformRequest: function (obj) {
@@ -169,7 +169,7 @@ export default class Home extends Component {
                 //console.log(2)
                 axios({
                     method: 'get',
-                    url: 'http://106.15.188.71/felixblog/Message/getmes'
+                    url: 'https://www.felixlg.work/felixblog/Message/getmes'
                 }).then((res) => {
                     var lis=[];
                     var lis2=[];
@@ -198,7 +198,7 @@ export default class Home extends Component {
             }, 1500)
             setTimeout(() => {
                 axios({
-                    url: 'http://106.15.188.71/felixblog/Message/addzan',
+                    url: 'https://www.felixlg.work/felixblog/Message/addzan',
                     method: 'post',
                     data: this.state,
                     transformRequest: function (obj) {
@@ -226,7 +226,7 @@ export default class Home extends Component {
         adduser.username = this.refs.inp.value
         //console.log(adduser)
         axios({
-            url: 'http://106.15.188.71/felixblog/Message/sename',
+            url: 'https://www.felixlg.work/felixblog/Message/sename',
             method: 'post',
             data: adduser,
             transformRequest: function (obj) {
@@ -251,7 +251,7 @@ export default class Home extends Component {
         setTimeout(() => {
             if (this.state.tag2 == true) {
                 axios({
-                    url: 'http://106.15.188.71/felixblog/Message/adduser',
+                    url: 'https://www.felixlg.work/felixblog/Message/adduser',
                     method: 'post',
                     data: adduser,
                     transformRequest: function (obj) {
@@ -287,7 +287,7 @@ export default class Home extends Component {
         }else{
             setTimeout(()=>{
                 axios({
-                    url: 'http://106.15.188.71/felixblog/Message/addmes',
+                    url: 'https://www.felixlg.work/felixblog/Message/addmes',
                     method: 'post',
                     data: addmessage,
                     transformRequest: function (obj) {
@@ -301,7 +301,7 @@ export default class Home extends Component {
                     //console.log(res)
                     axios({
                         method: 'get',
-                        url: 'http://106.15.188.71/felixblog/Message/getmes'
+                        url: 'https://www.felixlg.work/felixblog/Message/getmes'
                     }).then((res) => {
                         var lis=[];
                         var lis2=[];
@@ -323,7 +323,7 @@ export default class Home extends Component {
         // console.log(this.state.list.length)
         axios({
             method: 'get',
-            url: 'http://106.15.188.71/felixblog/Message/getmes'
+            url: 'https://www.felixlg.work/felixblog/Message/getmes'
         }).then((res) => {
             var lis=[];
             var lis2=[];

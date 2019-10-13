@@ -22,7 +22,7 @@ export default class Experience extends Component {
     }
     componentDidMount() {
         /* const _this=this;    //先存一下this，以防使用箭头函数this会指向我们不希望它所指向的对象。
-        axios.get('http://106.15.188.71/zyy/Doctor/getdoc')
+        axios.get('https://www.felixlg.work/zyy/Doctor/getdoc')
         .then(function (res) {
         //   console.log(res)
         })
